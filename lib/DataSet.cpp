@@ -1,0 +1,262 @@
+/**
+ * DataSet.cpp
+ * Inputs for processing data sets
+ * Author: yqy
+ * Date:2022.11.8
+ * Main structure:Item records information about each vector, DataSet records information about the dataset
+ * DataSet is an abstract class, its derived classes are: for the processing of different datasets, the goal is to different data are processed into a uniform format
+ * When using the object of the derived class will be converted to the DataSet class.
+ * 
+*/
+
+#ifndef __DATASET_H__
+#define __DATASET_H__
+#include <cstdio>
+#include <vector>
+#include <cmath>
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <cstdlib>
+#include <sstream>
+#include <thread>
+#include <chrono>
+#include <mutex>
+#include "Config.cpp"
+#include "HDF5read.cpp"
+/**
+ * Item
+ * Used to record information about each vector
+ * vector: vector
+ * edge : the KNN/NSW graph of the vector
+ * Provide overloaded operator : [] -(square of Euclidean distance)
+*/
+template <typename T>
+class Item {
+public: 
+    Item(){
+        edge.clear();
+    }
+    Item(int lenth) : vectors(lenth){
+        edge.clear();
+    }
+    ~Item(){}
+    std::vector<T> vectors; // vectors
+    std::vector<int> edge; // edge
+    std::vector<int> nsgEdge; // nsg edge
+    // HNSW 
+    std::vector<std::vector<int> > layerEdge; 
+    std::vector<std::vector<int> > nsgLayerEdge; 
+    int layerNum; 
+    T &operator[](int i) { return vectors[i]; }
+    // cluster
+    int clusterId; 
+    double operator-(Item<T> &item) {
+        double sum = 0;
+        for (int i = 0; i < vectors.size(); i++) {
+            sum += (vectors[i] - item.vectors[i]) * (vectors[i] - item.vectors[i]);
+        }
+        return sum;
+    }
+    double operator*(Item<T> &item) {
+        double sum = 0;
+        for (int i = 0; i < vectors.size(); i++) {
+            sum += vectors[i] * item.vectors[i];
+        }
+        return sum;
+    }
+    double length() {
+        double sum = 0;
+        for (int i = 0; i < vectors.size(); i++) {
+            sum += vectors[i] * vectors[i];
+        }
+        return sqrt(sum);
+    }
+    inline void print() {
+        for (auto & item : vectors) {
+            std::cout << item << " ";
+        }
+        std::cout << std::endl;
+    }
+};
+/**
+ * Used to record information about each cluster
+ * clusterId:id of the cluster
+ * clusterItem:vector of clusters
+ * clusterCenter:center of cluster
+ * clusterNum:number of clusters
+
+*/
+class ClusterItem {
+public:
+    int clusterId;
+    std::vector<int> clusterItem;
+    int clusterNum;
+    Item<FILETYPE> clusterCenter;
+    ClusterItem() {
+        clusterId = -1;
+        clusterItem.clear();
+        clusterNum = 0;
+    }
+    ~ClusterItem() {}
+};
+
+template <typename T>
+class DataSet{
+public:
+    DataSet() {
+        dimension = -1;
+    }
+    ~DataSet() {}
+    int dimension; 
+    std::vector<Item<T>> baseData; 
+    std::vector<Item<int>> ansData; 
+    std::vector<Item<T>> queryData; 
+    int maxLayerNum; 
+    int beginVector; 
+    // int getLevel() {
+    //     int level = 0;
+    //     while (level < maxLayerNum && double (rand() % 1000) / 1000 < HNSWProbability) {
+    //         level++;
+    //     }
+    //     return level;
+    // }
+};
+
+template <typename T>
+class SIFTDataSet: public DataSet<T>{
+public:
+    SIFTDataSet(std::string baseFile, std::string queryFile, std::string ansFile) : DataSet<T>(), baseFileName(baseFile), queryFileName(queryFile), ansFileName(ansFile) {
+        readBaseData();
+        readQueryData();
+        readAnsData();
+    }
+    ~SIFTDataSet(){}
+private:
+    std::string baseFileName;
+    std::string queryFileName;
+    std::string ansFileName;
+    void readBaseData() {
+        // std::cout << "loading base data:   " << baseFileName << std::endl;
+        FILE *fp = fopen(baseFileName.c_str(), "rb");
+        if (fp == NULL) {
+            std::cout << "open file error" << std::endl;
+            return;
+        }
+        int num = 0;
+        int length;
+        while (fread(&length, sizeof(int), 1, fp)){
+            this->baseData.emplace_back(length);
+            fread(this->baseData.back().vectors.data(),  sizeof(T), length, fp);
+            this->baseData.back().vectors.shrink_to_fit();
+            #if (DatabaseSelect > 2 && DatabaseSelect < 7)
+                if (++num == maxbaseNum) break;
+            #endif
+        }
+        this->baseData.shrink_to_fit();
+        if (this->dimension == -1) {
+            this->dimension = length;
+        } else if (this->dimension != length) {
+            std::cout << "dimension error" << std::endl;
+            return;
+        }
+        fclose(fp);
+        // std::cout << baseFileName << " successed load " << this->baseData.size() << " vectors" << std::endl;
+        // std::cout << "load base data done!" << std::endl;
+        // std::cout << "==========================================" << std::endl;
+    }
+    void readQueryData() {
+        // std::cout << "loading query data:   " << queryFileName << std::endl;
+        FILE *fp = fopen(queryFileName.c_str(), "rb");
+        if (fp == NULL) {
+            std::cout << "open file error" << std::endl;
+            return;
+        }
+        int length;
+        while (fread(&length, sizeof(int), 1, fp)){
+            this->queryData.emplace_back(length);
+            fread(this->queryData.back().vectors.data(),  sizeof(T), length, fp);
+        }
+        fclose(fp);
+        // std::cout << queryFileName << " successed load " << this->queryData.size() << " vectors" << std::endl;
+        // std::cout << "load query data done!" << std::endl;
+        // std::cout << "==========================================" << std::endl;
+    }
+    void readAnsData() {
+        // std::cout << "loading ans data:   " << ansFileName << std::endl;
+        FILE *fp = fopen(ansFileName.c_str(), "rb");
+        if (fp == NULL) {
+            std::cout << "open file error" << std::endl;
+            return;
+        }
+        int length;
+        while (fread(&length, sizeof(int), 1, fp)){
+            this->ansData.emplace_back(length);
+            fread(this->ansData.back().vectors.data(),  sizeof(int), length, fp);
+        }
+        fclose(fp);
+        // std::cout << ansFileName << " successed load " << this->ansData.size() << " vectors" << std::endl;
+        // std::cout << "load ans data done!" << std::endl;
+        // std::cout << "==========================================" << std::endl;
+    }
+};
+
+template <typename T>
+class HDF5DataSet: public DataSet<T>{
+public:
+    HDF5DataSet(std::string baseFile) : DataSet<T>(), baseFileName(baseFile) {
+        readBaseData();
+        readQueryData();
+        readAnsData();
+    }
+    ~HDF5DataSet(){}
+private:
+    std::string baseFileName;
+    void readBaseData() {
+        // std::cout << "loading base data:   " << std::endl;
+        auto base = read_dataset<T>(baseFileName, "train");
+        for (auto & item : base) {
+            this->baseData.emplace_back(item.size());
+            this->baseData.back().vectors = item;
+        }
+        this->baseData.shrink_to_fit();
+        this->dimension = D;
+        // std::cout << "successed load " << this->baseData.size() << " vectors" << std::endl;
+        // std::cout << "load base data done!" << std::endl;
+        // std::cout << "==========================================" << std::endl;
+    }
+    void readQueryData() {
+        // std::cout << "loading query data:   " << std::endl;
+        auto test = read_dataset<T>(baseFileName, "test");
+        for (auto & item : test) {
+            this->queryData.emplace_back(item.size());
+            this->queryData.back().vectors = item;
+        }
+        this->queryData.shrink_to_fit();
+        // std::cout << "successed load " << this->queryData.size() << " vectors" << std::endl;
+        // std::cout << "load query data done!" << std::endl;
+        // std::cout << "==========================================" << std::endl;
+    }
+    void readAnsData() {
+        // std::cout << "loading ans data:   " << std::endl;
+        auto neighbors = read_dataset<int>(baseFileName, "neighbors");
+        for (auto & item : neighbors) {
+            this->ansData.emplace_back(item.size());
+            this->ansData.back().vectors = item;
+        }
+        this->ansData.shrink_to_fit();
+        // std::cout << "successed load " << this->ansData.size() << " vectors" << std::endl;
+        // std::cout << "load ans data done!" << std::endl;
+        // std::cout << "==========================================" << std::endl;
+    }
+};
+
+class QUERYANS {
+public:
+    int us;
+    double recall;
+    QUERYANS(int us, double recall) : us(us), recall(recall) {}
+};
+
+
+#endif
