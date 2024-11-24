@@ -35,12 +35,7 @@ int main(int argc, char **argv ){
     }
     std::ios::sync_with_stdio(false);
     std::cin.tie(0);
-    #if DatabaseSelect > 6
-        HDF5DataSet<FILETYPE> *ds = new HDF5DataSet<FILETYPE>(baseFileName);
-    #else
-        SIFTDataSet<FILETYPE> *ds = new SIFTDataSet<FILETYPE>(baseFileName, queryFileName, ansFileName);
-    #endif 
-    DataSet<FILETYPE> *dataSet = ds;
+    DataSet<FILETYPE> *dataSet = new HDF5DataSet<FILETYPE>(baseFileName);
     // Initing index
     hnswlib::L2Space space(D); // D Dimension of the elements
     hnswlib::HierarchicalNSW<float>* alg_hnsw;

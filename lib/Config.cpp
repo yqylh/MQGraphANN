@@ -19,11 +19,6 @@ std::mutex *mtx;
 
 // Selecting a dataset
 #define SIFT1M 1
-#define SIFT1W 2
-#define SIFT1B10M 3
-#define SIFT1B50M 4
-#define SIFT1B100M 5
-#define SIFT1B200M 6
 #define FashionMNIST 7
 #define MNIST 8
 #define GIST 9
@@ -50,63 +45,14 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     const int D = 128;
     const int maxbaseNum = 1000000;
     #define FILETYPE float
-    std::string baseFileName = "./dataset/sift1M/sift_base.fvecs";
-    std::string queryFileName = "./dataset/sift1M/sift_query.fvecs";
-    std::string ansFileName = "./dataset/sift1M/sift_groundtruth.ivecs";
-#endif
-#if DatabaseSelect == SIFT1W
-    const int K = 100;
-    const int D = 128;
-    int maxbaseNum = 10000;
-    #define FILETYPE float
-    std::string baseFileName = "./dataset/sift1W/siftsmall_base.fvecs";
-    std::string queryFileName = "./dataset/sift1W/siftsmall_query.fvecs";
-    std::string ansFileName = "./dataset/sift1W/siftsmall_groundtruth.ivecs";
-#endif
-
-#if DatabaseSelect == SIFT1B10M
-    const int K = 100;
-    const int D = 128;
-    #define FILETYPE uchar
-    int maxbaseNum = 10000000;
-    std::string baseFileName = "./dataset/sift1B/bigann_base.bvecs";
-    std::string queryFileName = "./dataset/sift1B/bigann_query.bvecs";
-    std::string ansFileName = "./dataset/sift1B/ans/idx_10M.ivecs";
-#endif
-
-#if DatabaseSelect == SIFT1B50M
-    const int K = 100;
-    const int D = 128;
-    #define FILETYPE uchar
-    int maxbaseNum = 50000000;
-    std::string baseFileName = "./dataset/sift1B/bigann_base.bvecs";
-    std::string queryFileName = "./dataset/sift1B/bigann_query.bvecs";
-    std::string ansFileName = "./dataset/sift1B/ans/idx_50M.ivecs";
-#endif
-#if DatabaseSelect == SIFT1B100M
-    const int K = 100;
-    const int D = 128;
-    #define FILETYPE uchar
-    int maxbaseNum = 100000000;
-    std::string baseFileName = "./dataset/sift1B/bigann_base.bvecs";
-    std::string queryFileName = "./dataset/sift1B/bigann_query.bvecs";
-    std::string ansFileName = "./dataset/sift1B/ans/idx_100M.ivecs";
-#endif
-#if DatabaseSelect == SIFT1B200M
-    const int K = 100;
-    const int D = 128;
-    #define FILETYPE uchar
-    int maxbaseNum = 200000000;
-    std::string baseFileName = "./dataset/sift1B/bigann_base.bvecs";
-    std::string queryFileName = "./dataset/sift1B/bigann_query.bvecs";
-    std::string ansFileName = "./dataset/sift1B/ans/idx_200M.ivecs";
+    std::string baseFileName = "./dataset/sift-128-euclidean.hdf5";
 #endif
 #if DatabaseSelect == FashionMNIST
     const int K = 100;
     const int D = 784;
     #define FILETYPE float
     int maxbaseNum = 60000;
-    std::string baseFileName = "./dataset/hdf5/fashion-mnist-784-euclidean.hdf5";
+    std::string baseFileName = "./dataset/fashion-mnist-784-euclidean.hdf5";
 #endif
 
 #if DatabaseSelect == MNIST
@@ -114,7 +60,7 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     const int D = 784;
     #define FILETYPE float
     int maxbaseNum = 60000;
-    std::string baseFileName = "./dataset/hdf5/mnist-784-euclidean.hdf5";
+    std::string baseFileName = "./dataset/mnist-784-euclidean.hdf5";
 #endif
 
 #if DatabaseSelect == GIST
@@ -122,7 +68,7 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     const int D = 960;
     #define FILETYPE float
     int maxbaseNum = 1000000;
-    std::string baseFileName = "./dataset/hdf5/gist-960-euclidean.hdf5";
+    std::string baseFileName = "./dataset/gist-960-euclidean.hdf5";
 #endif
 
 #if DatabaseSelect == LASTFM
@@ -130,7 +76,7 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     const int D = 65;
     #define FILETYPE float
     int maxbaseNum = 292385;
-    std::string baseFileName = "./dataset/hdf5/lastfm-64-dot.hdf5";
+    std::string baseFileName = "./dataset/lastfm-64-dot.hdf5";
 #endif
 
 #if DatabaseSelect == NYTIMES
@@ -138,7 +84,7 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     const int D = 256;
     #define FILETYPE float
     int maxbaseNum = 290000;
-    std::string baseFileName = "./dataset/hdf5/nytimes-256-angular.hdf5";
+    std::string baseFileName = "./dataset/nytimes-256-angular.hdf5";
 #endif
 
 #if DatabaseSelect == GLOVE25
@@ -146,7 +92,7 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     const int D = 25;
     #define FILETYPE float
     int maxbaseNum = 1183514;
-    std::string baseFileName = "./dataset/hdf5/glove-25-angular.hdf5";
+    std::string baseFileName = "./dataset/glove-25-angular.hdf5";
 #endif 
 
 #if DatabaseSelect == GLOVE100
@@ -154,7 +100,7 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     const int D = 100;
     #define FILETYPE float
     int maxbaseNum = 1183514;
-    std::string baseFileName = "./dataset/hdf5/glove-100-angular.hdf5";
+    std::string baseFileName = "./dataset/glove-100-angular.hdf5";
 #endif
 
 #endif

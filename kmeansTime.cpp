@@ -17,12 +17,7 @@ int main(int argc, char **argv ){
     }
     std::ios::sync_with_stdio(false);
     std::cin.tie(0);
-    #if DatabaseSelect > 6
-        HDF5DataSet<FILETYPE> *ds = new HDF5DataSet<FILETYPE>(baseFileName);
-    #else
-        SIFTDataSet<FILETYPE> *ds = new SIFTDataSet<FILETYPE>(baseFileName, queryFileName, ansFileName);
-    #endif 
-    DataSet<FILETYPE> *dataSet = ds;
+    DataSet<FILETYPE> *dataSet = new HDF5DataSet<FILETYPE>(baseFileName);
 
     int num_clusters = dataSet->queryData.size() / CLUSTER_NUM;
     std::vector<ClusterItem> clusters;
