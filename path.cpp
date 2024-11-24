@@ -151,6 +151,6 @@ int main(int argc, char **argv ){
         << "avgPath=" << double(total_path) / dataSet->queryData.size() << "\t"
         << std::endl;
     delete alg_hnsw;
-    delete ds;
+    delete dataSet;
     return 0;
 }

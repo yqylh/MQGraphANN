@@ -40,6 +40,6 @@ int main(int argc, char **argv ){
     std::ofstream out(file, std::ios::app);
     out << CLUSTER_NUM << " " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms" << std::endl;
     out.close();
-    delete ds;
+    delete dataSet;
     return 0;
 }

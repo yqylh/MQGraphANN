@@ -189,6 +189,6 @@ int main(int argc, char **argv ){
         << std::endl;
     
     delete alg_hnsw;
-    delete ds;
+    delete dataSet;
     return 0;
 }
