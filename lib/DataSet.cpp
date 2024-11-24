@@ -175,13 +175,14 @@ private:
     }
     void createQueryData() {
         std::ofstream out(createFileName);
-        std::vector<double> eps(D, 0.0);
+        std::vector<float> eps(D, 0.0);
         int queryNum = this->queryData.size();
+        int baseNum = this->baseData.size();
         // std::cout << "queryNum: " << queryNum << std::endl;
         // 计算每个维度的平均值 / 100;
-        for (auto & item : this->queryData) {
+        for (auto & item : this->baseData) {
             for (int i = 0; i < D; i++) {
-                eps[i] += item[i] / queryNum / 100.0;
+                eps[i] += item[i] / baseNum / 100.0;
             }
         }
         // for (int i = 0; i < D; i++) {
@@ -196,8 +197,8 @@ private:
             // 每个点在周围生成 queryNum / 10 个点
             for (int j = 0; j < queryNum / 10; j++) {
                 for (int j = 0; j < D; j++) {
-                    // 生成一个随机数，范围在 item - eps ~ item + eps
-                    double temp = Item.vectors[j] + (1000 - rand() % 2000) / 1000.0 * eps[j];
+                    // 生成一个随机数，范围在 0 ~ item + eps
+                    float temp = Item.vectors[j] + rand() % 1000 / 1000.0 * eps[j];
                     out << temp << " ";
                 }
                 out << std::endl;
@@ -231,6 +232,7 @@ private:
         std::ifstream in(createFileName);
         if (!in.is_open()) {
             createQueryData();
+            in.open(createFileName);
         }
         // read query data
         for (auto & item : this->queryData) {
@@ -243,12 +245,21 @@ private:
         in.open(createFileAnsName);
         if (!in.is_open()) {
             createAnsData();
+            in.open(createFileAnsName);
         }
         for (auto & item : this->ansData) {
             for (auto & num : item.vectors) {
                 in >> num;
             }
         }
+        // for (auto & num : this->queryData[0].vectors) {
+        //     std::cout << num << " ";
+        // }
+        // std::cout << std::endl;
+        // for (auto & num : this->ansData[0].vectors) {
+        //     std::cout << num << " ";
+        // }
+        // std::cout << std::endl;
         in.close();
     }
 };
