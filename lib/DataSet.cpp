@@ -131,6 +131,7 @@ public:
         readBaseData();
         readQueryData();
         readAnsData();
+        clusterData();
     }
     ~HDF5DataSet(){}
 private:
@@ -171,6 +172,84 @@ private:
         // std::cout << "successed load " << this->ansData.size() << " vectors" << std::endl;
         // std::cout << "load ans data done!" << std::endl;
         // std::cout << "==========================================" << std::endl;
+    }
+    void createQueryData() {
+        std::ofstream out(createFileName);
+        std::vector<double> eps(D, 0.0);
+        int queryNum = this->queryData.size();
+        // std::cout << "queryNum: " << queryNum << std::endl;
+        // 计算每个维度的平均值 / 100;
+        for (auto & item : this->queryData) {
+            for (int i = 0; i < D; i++) {
+                eps[i] += item[i] / queryNum / 100.0;
+            }
+        }
+        // for (int i = 0; i < D; i++) {
+        //     std::cout << eps[i] << " ";
+        // }
+        // std::cout << std::endl;
+        // 生成query数据
+        // 随机十个起始点
+        for (int i = 0; i < 10; i++) {
+            int randomId = rand() % queryNum;
+            auto Item = this->queryData[randomId];
+            // 每个点在周围生成 queryNum / 10 个点
+            for (int j = 0; j < queryNum / 10; j++) {
+                for (int j = 0; j < D; j++) {
+                    // 生成一个随机数，范围在 item - eps ~ item + eps
+                    double temp = Item.vectors[j] + (1000 - rand() % 2000) / 1000.0 * eps[j];
+                    out << temp << " ";
+                }
+                out << std::endl;
+            }
+        }
+        out.close();
+    }
+    void createAnsData() {
+        std::ofstream out(createFileAnsName);
+        std::vector<std::vector<int> > out_vec (this->queryData.size(), std::vector<int>(K, 0));
+        #pragma omp parallel for
+        for (int i = 0; i < this->queryData.size(); i++) {
+            std::vector<std::pair<double, int>> ans;
+            for (int j = 0; j < this->baseData.size(); j++) {
+                ans.emplace_back(this->queryData[i] - this->baseData[j], j);
+            }
+            std::sort(ans.begin(), ans.end());
+            for (int j = 0; j < K; j++) {
+                out_vec[i][j] = ans[j].second;
+            }
+        }
+        for (int i = 0; i < this->queryData.size(); i++) {
+            for (int j = 0; j < K; j++) {
+                out << out_vec[i][j] << " ";
+            }
+            out << std::endl;
+        }
+        out.close();
+    }
+    void clusterData() {
+        std::ifstream in(createFileName);
+        if (!in.is_open()) {
+            createQueryData();
+        }
+        // read query data
+        for (auto & item : this->queryData) {
+            for (auto & num : item.vectors) {
+                in >> num;
+            }
+        }
+        in.close();
+        // ans
+        in.open(createFileAnsName);
+        if (!in.is_open()) {
+            createAnsData();
+        }
+        for (auto & item : this->ansData) {
+            for (auto & num : item.vectors) {
+                in >> num;
+            }
+        }
+        in.close();
     }
 };
 

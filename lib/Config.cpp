@@ -46,6 +46,8 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     const int maxbaseNum = 1000000;
     #define FILETYPE float
     std::string baseFileName = "./dataset/sift-128-euclidean.hdf5";
+    std::string createFileName = "./dataset/sift-128-euclidean.query";
+    std::string createFileAnsName = "./dataset/sift-128-euclidean.ans";
 #endif
 #if DatabaseSelect == FashionMNIST
     const int K = 100;
@@ -53,6 +55,8 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     #define FILETYPE float
     int maxbaseNum = 60000;
     std::string baseFileName = "./dataset/fashion-mnist-784-euclidean.hdf5";
+    std::string createFileName = "./dataset/fashion-mnist-784-euclidean.query";
+    std::string createFileAnsName = "./dataset/fashion-mnist-784-euclidean.ans";
 #endif
 
 #if DatabaseSelect == MNIST
@@ -61,6 +65,8 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     #define FILETYPE float
     int maxbaseNum = 60000;
     std::string baseFileName = "./dataset/mnist-784-euclidean.hdf5";
+    std::string createFileName = "./dataset/mnist-784-euclidean.query";
+    std::string createFileAnsName = "./dataset/mnist-784-euclidean.ans";
 #endif
 
 #if DatabaseSelect == GIST
@@ -69,6 +75,8 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     #define FILETYPE float
     int maxbaseNum = 1000000;
     std::string baseFileName = "./dataset/gist-960-euclidean.hdf5";
+    std::string createFileName = "./dataset/gist-960-euclidean.query";
+    std::string createFileAnsName = "./dataset/gist-960-euclidean.ans";
 #endif
 
 #if DatabaseSelect == LASTFM
@@ -77,6 +85,8 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     #define FILETYPE float
     int maxbaseNum = 292385;
     std::string baseFileName = "./dataset/lastfm-64-dot.hdf5";
+    std::string createFileName = "./dataset/lastfm-64-dot.query";
+    std::string createFileAnsName = "./dataset/lastfm-64-dot.ans";
 #endif
 
 #if DatabaseSelect == NYTIMES
@@ -85,6 +95,8 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     #define FILETYPE float
     int maxbaseNum = 290000;
     std::string baseFileName = "./dataset/nytimes-256-angular.hdf5";
+    std::string createFileName = "./dataset/nytimes-256-angular.query";
+    std::string createFileAnsName = "./dataset/nytimes-256-angular.ans";
 #endif
 
 #if DatabaseSelect == GLOVE25
@@ -93,6 +105,8 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     #define FILETYPE float
     int maxbaseNum = 1183514;
     std::string baseFileName = "./dataset/glove-25-angular.hdf5";
+    std::string createFileName = "./dataset/glove-25-angular.query";
+    std::string createFileAnsName = "./dataset/glove-25-angular.ans";
 #endif 
 
 #if DatabaseSelect == GLOVE100
@@ -101,6 +115,8 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     #define FILETYPE float
     int maxbaseNum = 1183514;
     std::string baseFileName = "./dataset/glove-100-angular.hdf5";
+    std::string createFileName = "./dataset/glove-100-angular.query";
+    std::string createFileAnsName = "./dataset/glove-100-angular.ans";
 #endif
 
 #endif
