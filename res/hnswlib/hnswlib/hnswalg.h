@@ -1216,6 +1216,14 @@ class HierarchicalNSW : public AlgorithmInterface<dist_t> {
         std::unique_lock <std::mutex> lock_el(link_list_locks_[cur_c]);
         // 随机生成一个level
         int curlevel = getRandomLevel(mult_);
+        static int zeroNum = 0;
+        static int allNum = 0;
+        if (curlevel == 0) {
+            zeroNum++;
+            if (allNum % 10000 == 0)
+                std::cout << double(zeroNum) / allNum << std::endl;
+        }
+        allNum++;
         if (level > 0)
             curlevel = level;
         // 记录当前元素的level
@@ -1315,6 +1323,10 @@ class HierarchicalNSW : public AlgorithmInterface<dist_t> {
 
         tableint currObj = enterpoint_node_;
         dist_t curdist = fstdistfunc_(query_data, getDataByInternalId(enterpoint_node_), dist_func_param_);
+        static double rate = 0;
+        static int num = 0;
+        // begin time
+        auto start = std::chrono::high_resolution_clock::now();
         for (int level = maxlevel_; level > 0; level--) {
             bool changed = true;
             while (changed) {
@@ -1343,6 +1355,7 @@ class HierarchicalNSW : public AlgorithmInterface<dist_t> {
                 }
             }
         }
+        auto middle = std::chrono::high_resolution_clock::now();
 
         std::priority_queue<std::pair<dist_t, tableint>, std::vector<std::pair<dist_t, tableint>>, CompareByFirst> top_candidates;
         bool bare_bone_search = !num_deleted_ && !isIdAllowed;
@@ -1352,6 +1365,13 @@ class HierarchicalNSW : public AlgorithmInterface<dist_t> {
         } else {
             top_candidates = searchBaseLayerST<false>(
                     currObj, query_data, std::max(ef_, k), isIdAllowed, nullptr, beginVector);
+        }
+        auto end = std::chrono::high_resolution_clock::now();
+        // rate += (middle - start) / (end - start);
+        rate += std::chrono::duration_cast<std::chrono::microseconds>(middle - start).count() / (double)std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+        num++;
+        if (num % 1000 == 0) {
+            std::cout << num << " rate: " << rate / num  << " " << maxlevel_<< std::endl;
         }
 
         while (top_candidates.size() > k) {
