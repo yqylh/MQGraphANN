@@ -178,7 +178,17 @@ int main(int argc, char **argv ){
         }
     #endif
     float recall = correct / (dataSet->queryData.size() * K);
-    std::cout
+    std::ofstream out;
+    #ifdef CLUSTER
+        out.open("./result/create-mq-" + std::to_string(DatabaseSelect), std::ios::app);
+    #else
+        #ifdef ZERO
+            out.open("./result/create-nsw-" + std::to_string(DatabaseSelect), std::ios::app);
+        #else
+            out.open("./result/create-hnsw-" + std::to_string(DatabaseSelect), std::ios::app);
+        #endif
+    #endif
+    out
         << "Dataset=" << DatabaseSelect << "\t"
         << "M=" << M << "\t"
         << "ef_construction=" << ef_construction << "\t"
@@ -187,7 +197,7 @@ int main(int argc, char **argv ){
         << "Recall=" << recall << "\t" 
         << "avgTime=" << allTime / dataSet->queryData.size() << "us" 
         << std::endl;
-    
+    out.close();
     delete alg_hnsw;
     delete dataSet;
     return 0;
