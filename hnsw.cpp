@@ -108,7 +108,7 @@ int main(int argc, char **argv ){
         for (auto & cluster : clusters) {
             // sort with - 
             std::sort(cluster.clusterItem.begin(), cluster.clusterItem.end(), [&](int a, int b) {
-                return dataSet->queryData[a] - cluster.clusterCenter < dataSet->queryData[b] - cluster.clusterCenter;
+                return dataSet->queryData[a] - cluster.clusterCenter > dataSet->queryData[b] - cluster.clusterCenter;
             });
         }
         std::vector<QUERYANS> queryAns;
@@ -179,15 +179,7 @@ int main(int argc, char **argv ){
     #endif
     float recall = correct / (dataSet->queryData.size() * K);
     std::ofstream out;
-    #ifdef CLUSTER
-        out.open("./result/create-mq-" + std::to_string(DatabaseSelect), std::ios::app);
-    #else
-        #ifdef ZERO
-            out.open("./result/create-nsw-" + std::to_string(DatabaseSelect), std::ios::app);
-        #else
-            out.open("./result/create-hnsw-" + std::to_string(DatabaseSelect), std::ios::app);
-        #endif
-    #endif
+    out.open("./result/twoway-out-" + std::to_string(DatabaseSelect), std::ios::app);
     out
         << "Dataset=" << DatabaseSelect << "\t"
         << "M=" << M << "\t"
