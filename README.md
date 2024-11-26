@@ -1,6 +1,6 @@
-# Graph-based Multi-Query for Approximate Nearest Neighbor Searching
+# Efficient Graph-based Multi-Query for Approximate Nearest Neighbor Searching
 
-**Graph-based Multi-Query for Approximate Nearest Neighbor Searching** is a paper we submitted to VLDB2024. We first proposed the multi-query problem in ANN and put forward the theory of Spatial Locality for this problem. Through this theory, we can effectively improve the speed and recall of ANN multi-query problems.
+**Efficient Graph-based Multi-Query for Approximate Nearest Neighbor Searching** is a paper we submitted to ICDE2025. We first proposed the multi-query problem in ANN and put forward the theory of Spatial Locality for this problem. Through this theory, we can effectively improve the speed and recall of ANN multi-query problems.
 
 We designed a graph algorithm-based framework for Spatial Locality, which has low intrusion and supports hot-swapping features, so it can be quickly applied to various graph algorithm projects. This code is our experimental code in the paper. Based on hnswlib, we implemented our code framework. By conducting experiments on eight real-world classic datasets, we found that by using Spatial Locality, query time can be effectively reduced by 50%~80%.
 
