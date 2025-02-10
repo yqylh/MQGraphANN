@@ -17,14 +17,26 @@ int main(int argc, char **argv ){
     }
     std::ios::sync_with_stdio(false);
     std::cin.tie(0);
-    #if DatabaseSelect > 6
-        HDF5DataSet<FILETYPE> *ds = new HDF5DataSet<FILETYPE>(baseFileName);
-    #else
-        SIFTDataSet<FILETYPE> *ds = new SIFTDataSet<FILETYPE>(baseFileName, queryFileName, ansFileName);
-    #endif 
+    HDF5DataSet<FILETYPE> *ds = new HDF5DataSet<FILETYPE>(baseFileName);
     DataSet<FILETYPE> *dataSet = ds;
-
-
+    std::vector<double> v2v_k100_avg_dist;
+    for (auto & v : ds->baseData) {
+        std::vector<double> v2v_k100_dist;
+        for (auto & v2 : ds->baseData) {
+            v2v_k100_dist.push_back(v2 - v);
+        }
+        std::sort(v2v_k100_dist.begin(), v2v_k100_dist.end());
+        double avg_dist = 0;
+        for (int i = 0; i < 100; i++) {
+            avg_dist += v2v_k100_dist[i];
+        }
+        avg_dist /= 100;
+        v2v_k100_avg_dist.push_back(avg_dist);
+    }
+    std::sort(v2v_k100_avg_dist.begin(), v2v_k100_avg_dist.end());
+    for (int i = 0; i < 100; i++) {
+        std::cout << v2v_k100_avg_dist[i] << std::endl;
+    }
     
     delete ds;
     return 0;
