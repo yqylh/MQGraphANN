@@ -131,7 +131,7 @@ public:
         readBaseData();
         readQueryData();
         readAnsData();
-        clusterData();
+        // clusterData();
     }
     ~HDF5DataSet(){}
 private:

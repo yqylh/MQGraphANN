@@ -11,6 +11,16 @@
 #include <thread>
 #include <chrono>
 #include <mutex>
+#include <unordered_map>
+#include <unordered_set>
+#include <set>
+#include <queue>
+#include <functional>
+#include <climits>
+#include <stack>
+#include <map>
+#include <mutex>
+using namespace std::chrono;
 
 #define uchar unsigned char
 int CREATEGRAPH = 0;
@@ -118,5 +128,26 @@ int ef_construction = 20;  // Controls index search speed/build speed tradeoff
     std::string createFileName = "./dataset/glove-100-angular.query";
     std::string createFileAnsName = "./dataset/glove-100-angular.ans";
 #endif
+
+template<typename... Args>
+void bugs(Args... args) {
+    (..., (std::cout << args << " "));
+    std::cout << std::endl;
+}
+std::mutex pf_mtx;
+std::ofstream pf_log_file("p_log");
+template<typename... Args>
+void pfbugs(Args... args) {
+    pf_mtx.lock();
+    // thread id
+    // pf_log_file << "pid=" << std::this_thread::get_id() << " t=";
+    // time
+    // auto now = system_clock::now();
+    // auto now_c = system_clock::to_time_t(now);
+    // pf_log_file << std::ctime(&now_c) << " ";
+    (..., (pf_log_file << args << " \n"));
+    // pf_log_file << std::endl;
+    pf_mtx.unlock();
+}
 
 #endif
