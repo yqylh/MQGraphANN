@@ -11,7 +11,6 @@
 
 #ifndef __DATASET_H__
 #define __DATASET_H__
-#include <cstdio>
 #include <vector>
 #include <cmath>
 #include <iostream>
@@ -23,7 +22,7 @@
 #include <chrono>
 #include <mutex>
 #include "Config.cpp"
-#include "HDF5read.cpp"
+#include "./HDF5read.cpp"
 
 template <typename T>
 class Item {
@@ -60,27 +59,6 @@ public:
         }
         std::cout << std::endl;
     }
-};
-/**
- * Used to record information about each cluster
- * clusterId:id of the cluster
- * clusterItem:vector of clusters
- * clusterCenter:center of cluster
- * clusterNum:number of clusters
-
-*/
-class ClusterItem {
-public:
-    int clusterId;
-    std::vector<int> clusterItem;
-    int clusterNum;
-    Item<float> clusterCenter;
-    ClusterItem() {
-        clusterId = -1;
-        clusterItem.clear();
-        clusterNum = 0;
-    }
-    ~ClusterItem() {}
 };
 
 template <typename T>

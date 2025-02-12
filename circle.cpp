@@ -2,16 +2,19 @@
 #include "lib/Config.cpp"
 #include "lib/CircleIndex.cpp"
 
+extern std::string baseFileName;
+
 int main(int argc, char **argv ){
     std::ios::sync_with_stdio(false);
     std::cin.tie(0);
     
-    M = atoi(argv[1]);
-    ef = atoi(argv[2]);
-    cluster_num = atoi(argv[3]);
-    m_circle = atoi(argv[4]);
-    m_sparse = atoi(argv[5]);
-    CircleIndex index(baseFileName, M, ef, cluster_num, m_circle, m_sparse);
+    ef = atoi(argv[1]);
+    m_circle = atoi(argv[2]);
+    m_sparse = atoi(argv[3]);
+    search_center = atoi(argv[4]);
+    CircleIndex index(baseFileName, ef, m_circle, m_sparse, search_center);
+    index.buildIndex();
+    index.searchIndex();
 
     return 0;
 }

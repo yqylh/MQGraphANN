@@ -1,9 +1,9 @@
 # dataset=(1 7 8 9 10 11 12 13)
-datasetS=11
+datasetS=8
 g++ circle.cpp -o main -g -std=c++17 -O3 -DDatabaseSelect=$datasetS  -fopenmp -pthread -w \
     -I /usr/include/hdf5/serial \
     -I ./res/hdf5/HighFive/include/ \
     -lhdf5_cpp -lhdf5 -L /usr/lib/x86_64-linux-gnu/hdf5/serial
 
-./main 8 1
+./main 200 48 48 100
 rm main

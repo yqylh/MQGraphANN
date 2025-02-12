@@ -20,6 +20,8 @@
 #include <stack>
 #include <map>
 #include <mutex>
+#include <omp.h>
+#include <tuple>
 using namespace std::chrono;
 
 #define uchar unsigned char
@@ -39,6 +41,7 @@ int ef;  // Controls index search speed/build speed tradeoff
 int cluster_num;        // Number of clusters
 int m_circle;          // Number of circles
 int m_sparse;         // Number of sparse and core
+int search_center;    // Whether to search the center point
 
 // Dataset configuration
 /**
@@ -119,6 +122,41 @@ void pfbugs(Args... args) {
     (..., (pf_log_file << args << " \n"));
     pf_log_file << std::endl;
     pf_mtx.unlock();
+}
+
+class Timer {
+public:
+    template<typename Func, typename... Args>
+    static auto measure(const std::string& description, std::ofstream &tout, Func func, Args&&... args) {
+        auto start = std::chrono::high_resolution_clock::now();
+        
+        if constexpr (std::is_same_v<std::invoke_result_t<Func, Args...>, void>) {
+            // If the function returns void
+            func(std::forward<Args>(args)...);
+            auto end = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double> elapsed = end - start;
+            tout <<" "<< description << "\t - Elapsed time: \t" << elapsed.count() * 1000 << "\tmirco seconds.\n";
+        } else {
+            // If the function returns a value
+            auto result = func(std::forward<Args>(args)...);
+            auto end = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double> elapsed = end - start;
+            tout <<" "<< description << "\t - Elapsed time: \t" << elapsed.count() * 1000 << "\tmicro seconds.\n";
+            return result;
+        }
+        std::cout << description << " - Done." << std::endl;
+    }
+};
+
+std::vector<float> norm_vector(std::vector<float> data) {
+    std::vector<float> norm_array;
+    float norm = 0.0f;
+    for (auto & item : data)
+        norm += item * item;
+    norm = 1.0f / (sqrtf(norm) + 1e-30f);
+    for (auto & item : data)
+        norm_array.push_back(item * norm);
+    return norm_array;
 }
 
 #endif

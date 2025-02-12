@@ -1,6 +1,6 @@
-dataset=(1)
-edge=(8)
-ef=(1)
+dataset=(1 7 8 9 10 11 12 13)
+edge=(8 16 24 32 48 64 96 128)
+ef=(200)
 for datasetS in ${dataset[*]}
 do
     g++ hnsw.cpp -o hnsw -g -std=c++17 -O3 -DDatabaseSelect=$datasetS  -fopenmp -pthread -w \

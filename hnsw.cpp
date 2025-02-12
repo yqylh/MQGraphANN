@@ -11,16 +11,6 @@ std::string solveName(int dataset, int M, int ef, int zero) {
         + "_" + std::to_string(zero) + ".bin";
     return index;
 }
-std::vector<float> norm_vector(std::vector<float> data) {
-    std::vector<float> norm_array;
-    float norm = 0.0f;
-    for (auto & item : data)
-        norm += item * item;
-    norm = 1.0f / (sqrtf(norm) + 1e-30f);
-    for (auto & item : data)
-        norm_array.push_back(item * norm);
-    return norm_array;
-}
 
 int main(int argc, char **argv ){
     if (argc != 3) {
