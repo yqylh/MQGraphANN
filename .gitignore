@@ -51,3 +51,4 @@ dataset/
 # test
 *.hdf5
 dataset/sift1M/README.md
+p_log
