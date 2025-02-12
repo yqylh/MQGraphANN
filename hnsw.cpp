@@ -3,11 +3,11 @@
 #include "./res/hnswlib/hnswlib/hnswlib.h"
 #include "./res/kmeans/kmeans.cpp"
 
-std::string solveName(int dataset, int M, int ef_construction, int zero) {
+std::string solveName(int dataset, int M, int ef, int zero) {
     std::string index = "./dataset/index/"
         + std::to_string(dataset) 
         + "_" + std::to_string(M) 
-        + "_" + std::to_string(ef_construction) 
+        + "_" + std::to_string(ef) 
         + "_" + std::to_string(zero) + ".bin";
     return index;
 }
@@ -24,11 +24,11 @@ std::vector<float> norm_vector(std::vector<float> data) {
 
 int main(int argc, char **argv ){
     if (argc != 3) {
-        std::cout << "Usage: ./main <M> <ef_construction>" << std::endl;
+        std::cout << "Usage: ./main <M> <ef>" << std::endl;
         return 0;
     }
     M = atoi(argv[1]);
-    ef_construction = atoi(argv[2]);
+    ef = atoi(argv[2]);
     std::ios::sync_with_stdio(false);
     std::cin.tie(0);
     DataSet<float> *dataSet = new HDF5DataSet<float>(baseFileName);
@@ -39,9 +39,9 @@ int main(int argc, char **argv ){
 
     std::string index;
     #ifdef ZERO
-        index = solveName(DatabaseSelect, M, ef_construction, 1);
+        index = solveName(DatabaseSelect, M, ef, 1);
     #else
-        index = solveName(DatabaseSelect, M, ef_construction, 0);
+        index = solveName(DatabaseSelect, M, ef, 0);
     #endif
     std::ifstream file(index);
     if (file.is_open()) {
@@ -50,8 +50,8 @@ int main(int argc, char **argv ){
         } else  alg_hnsw = new hnswlib::HierarchicalNSW<float>(&space, index.c_str());
     } else {
         if (DatabaseSelect >= 10) {
-            alg_hnsw = new hnswlib::HierarchicalNSW<float>(&space_cos, maxbaseNum, M, ef_construction);
-        } else alg_hnsw = new hnswlib::HierarchicalNSW<float>(&space, maxbaseNum, M, ef_construction);
+            alg_hnsw = new hnswlib::HierarchicalNSW<float>(&space_cos, maxbaseNum, M, ef);
+        } else alg_hnsw = new hnswlib::HierarchicalNSW<float>(&space, maxbaseNum, M, ef);
         for (int i = 0; i < dataSet->baseData.size(); i++) {
             if (DatabaseSelect == 5) {
                 std::vector<float> temp;
@@ -107,7 +107,7 @@ int main(int argc, char **argv ){
     out
         << "Dataset=" << DatabaseSelect << "\t"
         << "M=" << M << "\t"
-        << "ef_construction=" << ef_construction << "\t"
+        << "ef=" << ef << "\t"
         << "Recall=" << recall << "\t" 
         << "avgTime=" << allTime / dataSet->queryData.size() << "us" 
         << std::endl;

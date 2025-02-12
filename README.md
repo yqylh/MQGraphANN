@@ -47,7 +47,7 @@ Configure the dataset you downloaded in `lib/Config.cpp`. All configuration file
 We used libhdf5-dev to provide access to HDF5 files for reading, and our compilation options are:
 
 ```shell
-g++ hnsw.cpp -o mq -g -std=c++17 -O3 -DDatabaseSelect=$datasetS -DTEST -DZERO -DCLUSTER -fopenmp -pthread -w \
+g++ hnsw.cpp -o mq -g -std=c++17 -O3 -DDatabaseSelect=$datasetS  -DZERO -DCLUSTER -fopenmp -pthread -w \
     -I /usr/include/hdf5/serial \
     -I ./res/hdf5/HighFive/include/ \
     -lhdf5_cpp -lhdf5 -L /usr/lib/x86_64-linux-gnu/hdf5/serial
