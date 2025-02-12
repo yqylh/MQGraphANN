@@ -28,32 +28,27 @@
 template <typename T>
 class Item {
 public: 
-    Item(){
-        edge.clear();
-    }
-    Item(int lenth) : vectors(lenth){
-        edge.clear();
-    }
+    Item(){}
+    Item(int lenth) : vectors(lenth){}
     ~Item(){}
     std::vector<T> vectors; // vectors
-    std::vector<int> edge; // edge
     T &operator[](int i) { return vectors[i]; }
-    double operator-(Item<T> &item) {
-        double sum = 0;
+    float operator-(Item<T> &item) {
+        float sum = 0;
         for (int i = 0; i < vectors.size(); i++) {
             sum += (vectors[i] - item.vectors[i]) * (vectors[i] - item.vectors[i]);
         }
         return sum;
     }
-    double operator*(Item<T> &item) {
-        double sum = 0;
+    float operator*(Item<T> &item) {
+        float sum = 0;
         for (int i = 0; i < vectors.size(); i++) {
             sum += vectors[i] * item.vectors[i];
         }
         return sum;
     }
-    double length() {
-        double sum = 0;
+    float length() {
+        float sum = 0;
         for (int i = 0; i < vectors.size(); i++) {
             sum += vectors[i] * vectors[i];
         }
@@ -144,13 +139,6 @@ private:
         this->ansData.shrink_to_fit();
         // std::cout << "successed load " << this->ansData.size() << " vectors" << std::endl;
     }
-};
-
-class QUERYANS {
-public:
-    int us;
-    double recall;
-    QUERYANS(int us, double recall) : us(us), recall(recall) {}
 };
 
 
