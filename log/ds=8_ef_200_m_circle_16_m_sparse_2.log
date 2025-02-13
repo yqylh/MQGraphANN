@@ -1,0 +1,495 @@
+cluster 0 size: 321
+cluster 1 size: 297
+cluster 2 size: 220
+cluster 3 size: 257
+cluster 4 size: 296
+cluster 5 size: 283
+cluster 6 size: 210
+cluster 7 size: 249
+cluster 8 size: 221
+cluster 9 size: 233
+cluster 10 size: 305
+cluster 11 size: 329
+cluster 12 size: 252
+cluster 13 size: 261
+cluster 14 size: 276
+cluster 15 size: 278
+cluster 16 size: 263
+cluster 17 size: 273
+cluster 18 size: 319
+cluster 19 size: 268
+cluster 20 size: 256
+cluster 21 size: 252
+cluster 22 size: 220
+cluster 23 size: 221
+cluster 24 size: 188
+cluster 25 size: 161
+cluster 26 size: 319
+cluster 27 size: 214
+cluster 28 size: 160
+cluster 29 size: 156
+cluster 30 size: 159
+cluster 31 size: 217
+cluster 32 size: 305
+cluster 33 size: 211
+cluster 34 size: 259
+cluster 35 size: 175
+cluster 36 size: 193
+cluster 37 size: 250
+cluster 38 size: 230
+cluster 39 size: 249
+cluster 40 size: 283
+cluster 41 size: 286
+cluster 42 size: 322
+cluster 43 size: 319
+cluster 44 size: 213
+cluster 45 size: 297
+cluster 46 size: 253
+cluster 47 size: 255
+cluster 48 size: 333
+cluster 49 size: 262
+cluster 50 size: 333
+cluster 51 size: 185
+cluster 52 size: 259
+cluster 53 size: 168
+cluster 54 size: 188
+cluster 55 size: 188
+cluster 56 size: 238
+cluster 57 size: 314
+cluster 58 size: 252
+cluster 59 size: 335
+cluster 60 size: 167
+cluster 61 size: 193
+cluster 62 size: 185
+cluster 63 size: 209
+cluster 64 size: 218
+cluster 65 size: 281
+cluster 66 size: 269
+cluster 67 size: 300
+cluster 68 size: 217
+cluster 69 size: 124
+cluster 70 size: 151
+cluster 71 size: 188
+cluster 72 size: 280
+cluster 73 size: 216
+cluster 74 size: 245
+cluster 75 size: 200
+cluster 76 size: 165
+cluster 77 size: 278
+cluster 78 size: 176
+cluster 79 size: 218
+cluster 80 size: 268
+cluster 81 size: 293
+cluster 82 size: 288
+cluster 83 size: 173
+cluster 84 size: 340
+cluster 85 size: 304
+cluster 86 size: 254
+cluster 87 size: 242
+cluster 88 size: 254
+cluster 89 size: 246
+cluster 90 size: 187
+cluster 91 size: 108
+cluster 92 size: 339
+cluster 93 size: 243
+cluster 94 size: 343
+cluster 95 size: 267
+cluster 96 size: 337
+cluster 97 size: 285
+cluster 98 size: 290
+cluster 99 size: 320
+cluster 100 size: 218
+cluster 101 size: 193
+cluster 102 size: 211
+cluster 103 size: 302
+cluster 104 size: 155
+cluster 105 size: 255
+cluster 106 size: 213
+cluster 107 size: 295
+cluster 108 size: 208
+cluster 109 size: 207
+cluster 110 size: 310
+cluster 111 size: 209
+cluster 112 size: 334
+cluster 113 size: 151
+cluster 114 size: 264
+cluster 115 size: 239
+cluster 116 size: 289
+cluster 117 size: 135
+cluster 118 size: 298
+cluster 119 size: 227
+cluster 120 size: 151
+cluster 121 size: 265
+cluster 122 size: 185
+cluster 123 size: 233
+cluster 124 size: 248
+cluster 125 size: 321
+cluster 126 size: 162
+cluster 127 size: 193
+cluster 128 size: 163
+cluster 129 size: 245
+cluster 130 size: 356
+cluster 131 size: 179
+cluster 132 size: 340
+cluster 133 size: 369
+cluster 134 size: 133
+cluster 135 size: 270
+cluster 136 size: 278
+cluster 137 size: 352
+cluster 138 size: 329
+cluster 139 size: 159
+cluster 140 size: 213
+cluster 141 size: 184
+cluster 142 size: 225
+cluster 143 size: 128
+cluster 144 size: 300
+cluster 145 size: 161
+cluster 146 size: 191
+cluster 147 size: 234
+cluster 148 size: 269
+cluster 149 size: 352
+cluster 150 size: 241
+cluster 151 size: 247
+cluster 152 size: 278
+cluster 153 size: 305
+cluster 154 size: 190
+cluster 155 size: 224
+cluster 156 size: 219
+cluster 157 size: 241
+cluster 158 size: 237
+cluster 159 size: 165
+cluster 160 size: 281
+cluster 161 size: 177
+cluster 162 size: 353
+cluster 163 size: 182
+cluster 164 size: 277
+cluster 165 size: 217
+cluster 166 size: 279
+cluster 167 size: 238
+cluster 168 size: 145
+cluster 169 size: 219
+cluster 170 size: 396
+cluster 171 size: 182
+cluster 172 size: 354
+cluster 173 size: 214
+cluster 174 size: 292
+cluster 175 size: 242
+cluster 176 size: 363
+cluster 177 size: 293
+cluster 178 size: 287
+cluster 179 size: 254
+cluster 180 size: 231
+cluster 181 size: 171
+cluster 182 size: 256
+cluster 183 size: 269
+cluster 184 size: 353
+cluster 185 size: 193
+cluster 186 size: 270
+cluster 187 size: 156
+cluster 188 size: 283
+cluster 189 size: 153
+cluster 190 size: 182
+cluster 191 size: 263
+cluster 192 size: 261
+cluster 193 size: 169
+cluster 194 size: 254
+cluster 195 size: 313
+cluster 196 size: 291
+cluster 197 size: 290
+cluster 198 size: 223
+cluster 199 size: 224
+cluster 200 size: 163
+cluster 201 size: 219
+cluster 202 size: 268
+cluster 203 size: 187
+cluster 204 size: 295
+cluster 205 size: 327
+cluster 206 size: 250
+cluster 207 size: 200
+cluster 208 size: 312
+cluster 209 size: 286
+cluster 210 size: 151
+cluster 211 size: 185
+cluster 212 size: 285
+cluster 213 size: 236
+cluster 214 size: 382
+cluster 215 size: 271
+cluster 216 size: 291
+cluster 217 size: 293
+cluster 218 size: 238
+cluster 219 size: 238
+cluster 220 size: 140
+cluster 221 size: 206
+cluster 222 size: 224
+cluster 223 size: 204
+cluster 224 size: 213
+cluster 225 size: 199
+cluster 226 size: 317
+cluster 227 size: 360
+cluster 228 size: 173
+cluster 229 size: 219
+cluster 230 size: 222
+cluster 231 size: 269
+cluster 232 size: 199
+cluster 233 size: 314
+cluster 234 size: 226
+cluster 235 size: 202
+cluster 236 size: 288
+cluster 237 size: 202
+cluster 238 size: 220
+cluster 239 size: 241
+cluster 240 size: 408
+cluster 241 size: 281
+cluster 242 size: 213
+cluster 243 size: 335
+ Kmeans 分簇	 - Elapsed time: 	3546.58	mirco seconds.
+cluster 91 global_threshold: 1370.7 circle size: 69 sparse size: 39
+cluster 69 global_threshold: 1870.98 circle size: 68 sparse size: 56
+cluster 117 global_threshold: 1620.5 circle size: 70 sparse size: 65
+cluster 126 global_threshold: 1513.95 circle size: 87 sparse size: 75
+cluster 120 global_threshold: 1748.04 circle size: 86 sparse size: 65
+cluster 70 global_threshold: 1502.42 circle size: 81 sparse size: 70
+cluster 113 global_threshold: 911.086 circle size: 96 sparse size: 55
+cluster 104 global_threshold: 795.55 circle size: 103 sparse size: 52
+cluster 29 global_threshold: 1718.43 circle size: 74 sparse size: 82
+cluster 30 global_threshold: 1726.34 circle size: 85 sparse size: 74
+cluster 25 global_threshold: 1526.2 circle size: 89 sparse size: 72
+cluster 28 global_threshold: 1575.57 circle size: 87 sparse size: 73
+cluster 76 global_threshold: 1389.58 circle size: 97 sparse size: 68
+cluster 53 global_threshold: 1399.33 circle size: 81 sparse size: 87
+cluster 60 global_threshold: 1684.38 circle size: 95 sparse size: 72
+cluster 83 global_threshold: 1448.44 circle size: 93 sparse size: 80
+cluster 35 global_threshold: 1627.5 circle size: 82 sparse size: 93
+cluster 78 global_threshold: 1340.41 circle size: 96 sparse size: 80
+cluster 127 global_threshold: 1336.18 circle size: 121 sparse size: 72
+cluster 62 global_threshold: 1388.01 circle size: 99 sparse size: 86
+cluster 122 global_threshold: 1467.94 circle size: 100 sparse size: 85
+cluster 90 global_threshold: 1393.34 circle size: 114 sparse size: 73
+cluster 51 global_threshold: 1426.57 circle size: 105 sparse size: 80
+cluster 54 global_threshold: 1421.81 circle size: 110 sparse size: 78
+cluster 24 global_threshold: 1682.95 circle size: 100 sparse size: 88
+cluster 71 global_threshold: 1121.2 circle size: 108 sparse size: 80
+cluster 55 global_threshold: 1681.46 circle size: 96 sparse size: 92
+cluster 61 global_threshold: 1295.38 circle size: 105 sparse size: 88
+cluster 128 global_threshold: 916.207 circle size: 91 sparse size: 72
+cluster 36 global_threshold: 1156.81 circle size: 111 sparse size: 82
+cluster 101 global_threshold: 1442.69 circle size: 110 sparse size: 83
+cluster 134 global_threshold: 1722.52 circle size: 71 sparse size: 62
+cluster 75 global_threshold: 1382.65 circle size: 109 sparse size: 91
+cluster 109 global_threshold: 1610.28 circle size: 118 sparse size: 89
+cluster 108 global_threshold: 1740.87 circle size: 107 sparse size: 101
+cluster 111 global_threshold: 1823.79 circle size: 113 sparse size: 96
+cluster 63 global_threshold: 1430.67 circle size: 117 sparse size: 92
+cluster 6 global_threshold: 595.763 circle size: 125 sparse size: 85
+cluster 102 global_threshold: 708.813 circle size: 135 sparse size: 76
+cluster 106 global_threshold: 1445.5 circle size: 125 sparse size: 88
+cluster 44 global_threshold: 1528.32 circle size: 114 sparse size: 99
+cluster 27 global_threshold: 1681.12 circle size: 106 sparse size: 108
+cluster 143 global_threshold: 1497.67 circle size: 68 sparse size: 60
+cluster 33 global_threshold: 1183.75 circle size: 129 sparse size: 82
+cluster 73 global_threshold: 1191.3 circle size: 116 sparse size: 100
+cluster 131 global_threshold: 1382.27 circle size: 101 sparse size: 78
+cluster 100 global_threshold: 1549.41 circle size: 125 sparse size: 93
+cluster 31 global_threshold: 1498.33 circle size: 116 sparse size: 101
+cluster 79 global_threshold: 1066.81 circle size: 124 sparse size: 94
+cluster 68 global_threshold: 1819.41 circle size: 111 sparse size: 106
+cluster 22 global_threshold: 1286 circle size: 134 sparse size: 86
+cluster 64 global_threshold: 1597.03 circle size: 121 sparse size: 97
+cluster 23 global_threshold: 680.986 circle size: 150 sparse size: 71
+cluster 2 global_threshold: 1521.24 circle size: 118 sparse size: 102
+cluster 8 global_threshold: 535.129 circle size: 153 sparse size: 68
+cluster 139 global_threshold: 1483.44 circle size: 85 sparse size: 74
+cluster 124 global_threshold: 590.763 circle size: 181 sparse size: 67
+cluster 119 global_threshold: 1380.14 circle size: 135 sparse size: 92
+cluster 38 global_threshold: 1444.78 circle size: 125 sparse size: 105
+cluster 123 global_threshold: 1198.84 circle size: 133 sparse size: 100
+cluster 9 global_threshold: 1200.75 circle size: 127 sparse size: 106
+cluster 145 global_threshold: 1657.72 circle size: 90 sparse size: 71
+cluster 56 global_threshold: 1532.48 circle size: 132 sparse size: 106
+cluster 115 global_threshold: 1260.33 circle size: 140 sparse size: 99
+cluster 87 global_threshold: 1315.96 circle size: 143 sparse size: 99
+cluster 146 global_threshold: 1525.96 circle size: 94 sparse size: 97
+cluster 93 global_threshold: 1231.7 circle size: 143 sparse size: 100
+cluster 141 global_threshold: 1323.49 circle size: 105 sparse size: 79
+cluster 74 global_threshold: 1396.86 circle size: 135 sparse size: 110
+cluster 89 global_threshold: 1351.14 circle size: 136 sparse size: 110
+cluster 39 global_threshold: 1236.64 circle size: 147 sparse size: 102
+cluster 21 global_threshold: 1332.04 circle size: 151 sparse size: 101
+cluster 58 global_threshold: 1276.94 circle size: 151 sparse size: 101
+cluster 37 global_threshold: 1301.1 circle size: 145 sparse size: 105
+cluster 46 global_threshold: 1483.5 circle size: 136 sparse size: 117
+cluster 12 global_threshold: 1572.36 circle size: 128 sparse size: 124
+cluster 86 global_threshold: 1761.85 circle size: 132 sparse size: 122
+cluster 105 global_threshold: 1195 circle size: 146 sparse size: 109
+cluster 20 global_threshold: 1440.79 circle size: 134 sparse size: 122
+cluster 88 global_threshold: 1340.02 circle size: 144 sparse size: 110
+cluster 168 global_threshold: 1425.66 circle size: 76 sparse size: 69
+cluster 47 global_threshold: 1467.61 circle size: 135 sparse size: 120
+cluster 159 global_threshold: 1679.44 circle size: 102 sparse size: 63
+cluster 3 global_threshold: 652.832 circle size: 153 sparse size: 104
+cluster 52 global_threshold: 1228.49 circle size: 153 sparse size: 106
+cluster 49 global_threshold: 1454.58 circle size: 143 sparse size: 119
+cluster 34 global_threshold: 1241.01 circle size: 151 sparse size: 108
+cluster 16 global_threshold: 1575.06 circle size: 141 sparse size: 122
+cluster 13 global_threshold: 1291.56 circle size: 156 sparse size: 105
+cluster 7 global_threshold: 1447.85 circle size: 131 sparse size: 118
+cluster 114 global_threshold: 1449.14 circle size: 147 sparse size: 117
+cluster 154 global_threshold: 1351.54 circle size: 107 sparse size: 83
+cluster 121 global_threshold: 1360.54 circle size: 159 sparse size: 106
+cluster 19 global_threshold: 1092.76 circle size: 151 sparse size: 117
+cluster 95 global_threshold: 1356.14 circle size: 152 sparse size: 115
+cluster 140 global_threshold: 1545.77 circle size: 118 sparse size: 95
+cluster 80 global_threshold: 1606.06 circle size: 143 sparse size: 125
+cluster 66 global_threshold: 1161.69 circle size: 141 sparse size: 128
+cluster 161 global_threshold: 1599.94 circle size: 84 sparse size: 93
+cluster 129 global_threshold: 1285.44 circle size: 136 sparse size: 109
+cluster 17 global_threshold: 1483.69 circle size: 147 sparse size: 126
+cluster 163 global_threshold: 1367.95 circle size: 103 sparse size: 79
+cluster 181 global_threshold: 1837.1 circle size: 94 sparse size: 77
+cluster 77 global_threshold: 552.545 circle size: 167 sparse size: 111
+cluster 14 global_threshold: 592.92 circle size: 178 sparse size: 98
+cluster 15 global_threshold: 1019.71 circle size: 163 sparse size: 115
+cluster 171 global_threshold: 1666.72 circle size: 98 sparse size: 84
+cluster 187 global_threshold: 1465.75 circle size: 87 sparse size: 69
+cluster 72 global_threshold: 546.767 circle size: 163 sparse size: 117
+cluster 189 global_threshold: 1566.78 circle size: 77 sparse size: 76
+cluster 142 global_threshold: 1400.66 circle size: 127 sparse size: 98
+cluster 40 global_threshold: 604.679 circle size: 185 sparse size: 98
+cluster 5 global_threshold: 1609.91 circle size: 154 sparse size: 129
+cluster 65 global_threshold: 1240.83 circle size: 152 sparse size: 129
+cluster 97 global_threshold: 1365.54 circle size: 165 sparse size: 120
+cluster 193 global_threshold: 1269.79 circle size: 91 sparse size: 78
+cluster 41 global_threshold: 1462.73 circle size: 148 sparse size: 138
+cluster 82 global_threshold: 1697.28 circle size: 152 sparse size: 136
+cluster 173 global_threshold: 1274.57 circle size: 124 sparse size: 90
+cluster 156 global_threshold: 1454.1 circle size: 119 sparse size: 100
+cluster 116 global_threshold: 1386.43 circle size: 173 sparse size: 116
+cluster 98 global_threshold: 1380.33 circle size: 166 sparse size: 124
+cluster 125 global_threshold: 1356.88 circle size: 162 sparse size: 159
+cluster 81 global_threshold: 1235.69 circle size: 165 sparse size: 128
+cluster 185 global_threshold: 1268.4 circle size: 113 sparse size: 80
+cluster 155 global_threshold: 1341.25 circle size: 126 sparse size: 98
+cluster 210 global_threshold: 1556.44 circle size: 80 sparse size: 71
+cluster 4 global_threshold: 1129.58 circle size: 166 sparse size: 130
+cluster 1 global_threshold: 1253.65 circle size: 170 sparse size: 127
+cluster 190 global_threshold: 1627.6 circle size: 98 sparse size: 84
+cluster 147 global_threshold: 1104.95 circle size: 137 sparse size: 97
+cluster 107 global_threshold: 1399.04 circle size: 162 sparse size: 133
+cluster 200 global_threshold: 798.327 circle size: 111 sparse size: 52
+cluster 45 global_threshold: 1146.43 circle size: 166 sparse size: 131
+cluster 220 global_threshold: 1509.77 circle size: 77 sparse size: 63
+cluster 118 global_threshold: 1308.85 circle size: 163 sparse size: 135
+cluster 165 global_threshold: 1162.61 circle size: 119 sparse size: 98
+cluster 169 global_threshold: 1233.6 circle size: 121 sparse size: 98
+cluster 67 global_threshold: 555.201 circle size: 202 sparse size: 98
+cluster 150 global_threshold: 1430.44 circle size: 140 sparse size: 101
+cluster 158 global_threshold: 1781.54 circle size: 105 sparse size: 132
+cluster 10 global_threshold: 1347.23 circle size: 161 sparse size: 144
+cluster 103 global_threshold: 1076.77 circle size: 173 sparse size: 129
+cluster 32 global_threshold: 1273.63 circle size: 180 sparse size: 125
+cluster 85 global_threshold: 1467.87 circle size: 159 sparse size: 145
+cluster 151 global_threshold: 1184.61 circle size: 139 sparse size: 108
+cluster 157 global_threshold: 1561.39 circle size: 133 sparse size: 108
+cluster 135 global_threshold: 1378.21 circle size: 148 sparse size: 122
+cluster 57 global_threshold: 1120.5 circle size: 188 sparse size: 126
+cluster 211 global_threshold: 799.543 circle size: 123 sparse size: 62
+cluster 203 global_threshold: 1795.5 circle size: 99 sparse size: 88
+cluster 110 global_threshold: 1331.66 circle size: 163 sparse size: 147
+cluster 167 global_threshold: 1265.78 circle size: 129 sparse size: 109
+cluster 180 global_threshold: 1470.98 circle size: 120 sparse size: 111
+cluster 136 global_threshold: 1436.62 circle size: 144 sparse size: 134
+cluster 0 global_threshold: 1422.71 circle size: 186 sparse size: 135
+cluster 26 global_threshold: 1226.93 circle size: 186 sparse size: 133
+cluster 43 global_threshold: 1024.52 circle size: 197 sparse size: 122
+cluster 18 global_threshold: 1078.69 circle size: 181 sparse size: 138
+cluster 42 global_threshold: 1061.89 circle size: 174 sparse size: 148
+cluster 175 global_threshold: 1376.5 circle size: 131 sparse size: 111
+cluster 99 global_threshold: 582.654 circle size: 241 sparse size: 79
+cluster 228 global_threshold: 1896.25 circle size: 86 sparse size: 87
+cluster 148 global_threshold: 1538.6 circle size: 142 sparse size: 127
+cluster 207 global_threshold: 1739.71 circle size: 110 sparse size: 90
+cluster 112 global_threshold: 542.072 circle size: 247 sparse size: 87
+cluster 11 global_threshold: 1610.86 circle size: 170 sparse size: 159
+cluster 152 global_threshold: 536.049 circle size: 177 sparse size: 101
+cluster 198 global_threshold: 1503.03 circle size: 121 sparse size: 102
+cluster 225 global_threshold: 1634.73 circle size: 100 sparse size: 99
+cluster 201 global_threshold: 818.169 circle size: 129 sparse size: 90
+cluster 223 global_threshold: 1155.89 circle size: 118 sparse size: 86
+cluster 50 global_threshold: 1396.55 circle size: 181 sparse size: 152
+cluster 221 global_threshold: 1487.51 circle size: 113 sparse size: 93
+cluster 199 global_threshold: 1705.97 circle size: 124 sparse size: 100
+cluster 92 global_threshold: 1368.96 circle size: 181 sparse size: 158
+cluster 224 global_threshold: 1560.8 circle size: 122 sparse size: 91
+cluster 48 global_threshold: 1458.06 circle size: 169 sparse size: 164
+cluster 182 global_threshold: 1641.66 circle size: 139 sparse size: 117
+cluster 179 global_threshold: 1637.73 circle size: 128 sparse size: 126
+cluster 96 global_threshold: 999.628 circle size: 196 sparse size: 141
+cluster 59 global_threshold: 591.042 circle size: 239 sparse size: 96
+cluster 84 global_threshold: 1018.72 circle size: 199 sparse size: 141
+cluster 235 global_threshold: 1578.54 circle size: 113 sparse size: 89
+cluster 232 global_threshold: 1304.65 circle size: 108 sparse size: 91
+cluster 144 global_threshold: 1509.37 circle size: 152 sparse size: 148
+cluster 183 global_threshold: 1238.83 circle size: 162 sparse size: 107
+cluster 160 global_threshold: 1473.13 circle size: 139 sparse size: 142
+cluster 237 global_threshold: 1306.27 circle size: 114 sparse size: 88
+cluster 166 global_threshold: 1181.5 circle size: 161 sparse size: 118
+cluster 222 global_threshold: 1640.39 circle size: 125 sparse size: 99
+cluster 94 global_threshold: 1402.57 circle size: 176 sparse size: 167
+cluster 230 global_threshold: 1097.83 circle size: 139 sparse size: 83
+cluster 229 global_threshold: 1493.77 circle size: 119 sparse size: 100
+cluster 219 global_threshold: 1497.4 circle size: 125 sparse size: 113
+cluster 242 global_threshold: 1630.61 circle size: 107 sparse size: 106
+cluster 213 global_threshold: 1650.4 circle size: 130 sparse size: 106
+cluster 164 global_threshold: 1527.56 circle size: 159 sparse size: 118
+cluster 153 global_threshold: 1146.54 circle size: 172 sparse size: 133
+cluster 194 global_threshold: 1302.02 circle size: 145 sparse size: 109
+cluster 186 global_threshold: 1401.07 circle size: 156 sparse size: 114
+cluster 206 global_threshold: 1515.76 circle size: 147 sparse size: 103
+cluster 238 global_threshold: 1458.45 circle size: 122 sparse size: 98
+cluster 192 global_threshold: 1297.85 circle size: 144 sparse size: 117
+cluster 178 global_threshold: 1688.49 circle size: 151 sparse size: 136
+cluster 174 global_threshold: 548.218 circle size: 222 sparse size: 70
+cluster 177 global_threshold: 643.776 circle size: 186 sparse size: 107
+cluster 234 global_threshold: 1345.48 circle size: 137 sparse size: 89
+cluster 202 global_threshold: 1427.82 circle size: 158 sparse size: 110
+cluster 218 global_threshold: 1516.88 circle size: 138 sparse size: 100
+cluster 191 global_threshold: 1281.86 circle size: 144 sparse size: 119
+cluster 138 global_threshold: 1507.03 circle size: 187 sparse size: 142
+cluster 188 global_threshold: 1616.55 circle size: 147 sparse size: 136
+cluster 132 global_threshold: 1351.07 circle size: 184 sparse size: 156
+cluster 239 global_threshold: 1438.61 circle size: 133 sparse size: 108
+cluster 215 global_threshold: 1461.13 circle size: 157 sparse size: 114
+cluster 130 global_threshold: 1321.99 circle size: 195 sparse size: 161
+cluster 197 global_threshold: 1392.92 circle size: 162 sparse size: 128
+cluster 196 global_threshold: 1438.18 circle size: 155 sparse size: 136
+cluster 212 global_threshold: 1181.18 circle size: 159 sparse size: 126
+cluster 209 global_threshold: 1425.41 circle size: 159 sparse size: 127
+cluster 231 global_threshold: 608.912 circle size: 171 sparse size: 98
+cluster 184 global_threshold: 537.228 circle size: 223 sparse size: 130
+cluster 137 global_threshold: 1329.47 circle size: 195 sparse size: 157
+cluster 216 global_threshold: 1499.64 circle size: 164 sparse size: 127
+cluster 217 global_threshold: 1304.55 circle size: 160 sparse size: 133
+cluster 204 global_threshold: 1172.3 circle size: 174 sparse size: 121
+cluster 195 global_threshold: 1203.59 circle size: 169 sparse size: 144
+cluster 149 global_threshold: 1463.67 circle size: 194 sparse size: 158
+cluster 241 global_threshold: 1558.98 circle size: 146 sparse size: 135
+cluster 208 global_threshold: 561.281 circle size: 195 sparse size: 117
+cluster 133 global_threshold: 1118.83 circle size: 209 sparse size: 160
+cluster 236 global_threshold: 1490.15 circle size: 161 sparse size: 127
+cluster 205 global_threshold: 606.602 circle size: 200 sparse size: 127
+cluster 243 global_threshold: 1080.36 circle size: 182 sparse size: 153
+cluster 162 global_threshold: 1195.06 circle size: 207 sparse size: 146
+cluster 172 global_threshold: 1146.67 circle size: 195 sparse size: 159
+cluster 233 global_threshold: 1542.86 circle size: 165 sparse size: 149
+cluster 176 global_threshold: 1175.16 circle size: 211 sparse size: 152
+cluster 226 global_threshold: 1245.65 circle size: 181 sparse size: 136
+cluster 170 global_threshold: 1207.94 circle size: 222 sparse size: 174
+cluster 227 global_threshold: 1090.07 circle size: 212 sparse size: 148
+cluster 214 global_threshold: 1195.21 circle size: 229 sparse size: 153
+cluster 240 global_threshold: 1358.17 circle size: 225 sparse size: 183
+ 划分稠密区域和稀疏区域	 - Elapsed time: 	324.714	mirco seconds.
+ 建立环索引	 - Elapsed time: 	77.6697	mirco seconds.
+ 建立稀疏区域索引	 - Elapsed time: 	4961.21	mirco seconds.
+ 建立中心点索引	 - Elapsed time: 	14.5284	mirco seconds.
+ 建立图索引	 - Elapsed time: 	5053.48	mirco seconds.
+总耗时: 8924 ms
