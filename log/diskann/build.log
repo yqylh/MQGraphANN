@@ -1,0 +1,720 @@
+====== dataset: fashionmnist, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 8  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 4.37853s
+Index built with degree: max:8  avg:7.57468  min:1  count(deg<2):686
+Indexing time: 4.47303
+Not saving tags as they are not enabled.
+Time taken for save: 0.162588s.
+====== dataset: fashionmnist, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 16  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 5.4865s
+Index built with degree: max:16  avg:13.9463  min:1  count(deg<2):579
+Indexing time: 5.57154
+Not saving tags as they are not enabled.
+Time taken for save: 0.164569s.
+====== dataset: fashionmnist, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 24  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 6.42358s
+Index built with degree: max:24  avg:18.8391  min:1  count(deg<2):546
+Indexing time: 6.51478
+Not saving tags as they are not enabled.
+Time taken for save: 0.161247s.
+====== dataset: fashionmnist, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 32  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 6.19433s
+Index built with degree: max:32  avg:22.633  min:1  count(deg<2):532
+Indexing time: 6.28434
+Not saving tags as they are not enabled.
+Time taken for save: 0.161259s.
+====== dataset: fashionmnist, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 48  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 6.633s
+Index built with degree: max:48  avg:28.2697  min:1  count(deg<2):521
+Indexing time: 6.72172
+Not saving tags as they are not enabled.
+Time taken for save: 0.162146s.
+====== dataset: fashionmnist, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 64  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 6.89489s
+Index built with degree: max:64  avg:32.3596  min:1  count(deg<2):525
+Indexing time: 6.97811
+Not saving tags as they are not enabled.
+Time taken for save: 0.161284s.
+====== dataset: fashionmnist, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 96  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 7.49251s
+Index built with degree: max:96  avg:37.1703  min:1  count(deg<2):528
+Indexing time: 7.58086
+Not saving tags as they are not enabled.
+Time taken for save: 0.231002s.
+====== dataset: fashionmnist, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 128  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 7.40158s
+Index built with degree: max:128  avg:39.0885  min:1  count(deg<2):522
+Indexing time: 7.48557
+Not saving tags as they are not enabled.
+Time taken for save: 0.163273s.
+====== dataset: glove, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 8  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1183514 from file.. 
+Starting index build with 1183514 points... 
+
+0% of index build completed.
+8.44941% of index build completed.
+16.8988% of index build completed.
+25.3482% of index build completed.
+33.7977% of index build completed.
+42.2471% of index build completed.
+50.6965% of index build completed.
+59.1459% of index build completed.
+67.5953% of index build completed.
+76.0447% of index build completed.
+84.4941% of index build completed.
+92.9436% of index build completed.Starting final cleanup..done. Link time: 41.0938s
+Index built with degree: max:8  avg:7.68658  min:1  count(deg<2):8425
+Indexing time: 41.1829
+Not saving tags as they are not enabled.
+Time taken for save: 0.138959s.
+====== dataset: glove, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 16  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1183514 from file.. 
+Starting index build with 1183514 points... 
+
+0% of index build completed.
+8.44941% of index build completed.
+16.8988% of index build completed.
+25.3482% of index build completed.
+33.7977% of index build completed.
+42.2471% of index build completed.
+50.6965% of index build completed.
+59.1459% of index build completed.
+67.5953% of index build completed.
+76.0447% of index build completed.
+84.4941% of index build completed.
+92.9436% of index build completed.Starting final cleanup..done. Link time: 40.7278s
+Index built with degree: max:16  avg:15.1948  min:1  count(deg<2):1669
+Indexing time: 40.8192
+Not saving tags as they are not enabled.
+Time taken for save: 0.153126s.
+====== dataset: glove, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 24  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1183514 from file.. 
+Starting index build with 1183514 points... 
+
+0% of index build completed.
+8.44941% of index build completed.
+16.8988% of index build completed.
+25.3482% of index build completed.
+33.7977% of index build completed.
+42.2471% of index build completed.
+50.6965% of index build completed.
+59.1459% of index build completed.
+67.5953% of index build completed.
+76.0447% of index build completed.
+84.4941% of index build completed.
+92.9436% of index build completed.Starting final cleanup..done. Link time: 51.4904s
+Index built with degree: max:24  avg:21.891  min:1  count(deg<2):1101
+Indexing time: 51.5776
+Not saving tags as they are not enabled.
+Time taken for save: 0.176884s.
+====== dataset: glove, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 32  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1183514 from file.. 
+Starting index build with 1183514 points... 
+
+0% of index build completed.
+8.44941% of index build completed.
+16.8988% of index build completed.
+25.3482% of index build completed.
+33.7977% of index build completed.
+42.2471% of index build completed.
+50.6965% of index build completed.
+59.1459% of index build completed.
+67.5953% of index build completed.
+76.0447% of index build completed.
+84.4941% of index build completed.
+92.9436% of index build completed.Starting final cleanup..done. Link time: 56.2196s
+Index built with degree: max:32  avg:27.5161  min:1  count(deg<2):980
+Indexing time: 56.3125
+Not saving tags as they are not enabled.
+Time taken for save: 0.282644s.
+====== dataset: glove, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 48  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1183514 from file.. 
+Starting index build with 1183514 points... 
+
+0% of index build completed.
+8.44941% of index build completed.
+16.8988% of index build completed.
+25.3482% of index build completed.
+33.7977% of index build completed.
+42.2471% of index build completed.
+50.6965% of index build completed.
+59.1459% of index build completed.
+67.5953% of index build completed.
+76.0447% of index build completed.
+84.4941% of index build completed.
+92.9436% of index build completed.Starting final cleanup..done. Link time: 68.1484s
+Index built with degree: max:48  avg:35.7462  min:1  count(deg<2):892
+Indexing time: 68.2511
+Not saving tags as they are not enabled.
+Time taken for save: 0.235013s.
+====== dataset: glove, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 64  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1183514 from file.. 
+Starting index build with 1183514 points... 
+
+0% of index build completed.
+8.44941% of index build completed.
+16.8988% of index build completed.
+25.3482% of index build completed.
+33.7977% of index build completed.
+42.2471% of index build completed.
+50.6965% of index build completed.
+59.1459% of index build completed.
+67.5953% of index build completed.
+76.0447% of index build completed.
+84.4941% of index build completed.
+92.9436% of index build completed.Starting final cleanup..done. Link time: 72.4015s
+Index built with degree: max:64  avg:41.104  min:1  count(deg<2):876
+Indexing time: 72.5025
+Not saving tags as they are not enabled.
+Time taken for save: 0.259232s.
+====== dataset: glove, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 96  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1183514 from file.. 
+Starting index build with 1183514 points... 
+
+0% of index build completed.
+8.44941% of index build completed.
+16.8988% of index build completed.
+25.3482% of index build completed.
+33.7977% of index build completed.
+42.2471% of index build completed.
+50.6965% of index build completed.
+59.1459% of index build completed.
+67.5953% of index build completed.
+76.0447% of index build completed.
+84.4941% of index build completed.
+92.9436% of index build completed.Starting final cleanup..done. Link time: 73.7892s
+Index built with degree: max:96  avg:47.6865  min:1  count(deg<2):865
+Indexing time: 73.8838
+Not saving tags as they are not enabled.
+Time taken for save: 0.293871s.
+====== dataset: glove, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 128  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1183514 from file.. 
+Starting index build with 1183514 points... 
+
+0% of index build completed.
+8.44941% of index build completed.
+16.8988% of index build completed.
+25.3482% of index build completed.
+33.7977% of index build completed.
+42.2471% of index build completed.
+50.6965% of index build completed.
+59.1459% of index build completed.
+67.5953% of index build completed.
+76.0447% of index build completed.
+84.4941% of index build completed.
+92.9436% of index build completed.Starting final cleanup..done. Link time: 69.6184s
+Index built with degree: max:128  avg:51.5765  min:1  count(deg<2):867
+Indexing time: 69.7052
+Not saving tags as they are not enabled.
+Time taken for save: 0.313694s.
+====== dataset: lastfm, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 8  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 292385 from file.. 
+Starting index build with 292385 points... 
+
+0% of index build completed.
+34.2015% of index build completed.
+68.403% of index build completed.Starting final cleanup..done. Link time: 7.02538s
+Index built with degree: max:8  avg:7.48616  min:1  count(deg<2):1068
+Indexing time: 7.06929
+Not saving tags as they are not enabled.
+Time taken for save: 0.065432s.
+====== dataset: lastfm, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 16  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 292385 from file.. 
+Starting index build with 292385 points... 
+
+0% of index build completed.
+34.2015% of index build completed.
+68.403% of index build completed.Starting final cleanup..done. Link time: 7.04371s
+Index built with degree: max:16  avg:13.1571  min:1  count(deg<2):368
+Indexing time: 7.08533
+Not saving tags as they are not enabled.
+Time taken for save: 0.06702s.
+====== dataset: lastfm, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 24  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 292385 from file.. 
+Starting index build with 292385 points... 
+
+0% of index build completed.
+34.2015% of index build completed.
+68.403% of index build completed.Starting final cleanup..done. Link time: 7.24036s
+Index built with degree: max:24  avg:16.6574  min:1  count(deg<2):252
+Indexing time: 7.28198
+Not saving tags as they are not enabled.
+Time taken for save: 0.072334s.
+====== dataset: lastfm, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 32  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 292385 from file.. 
+Starting index build with 292385 points... 
+
+0% of index build completed.
+34.2015% of index build completed.
+68.403% of index build completed.Starting final cleanup..done. Link time: 8.13277s
+Index built with degree: max:32  avg:19.0334  min:1  count(deg<2):251
+Indexing time: 8.17431
+Not saving tags as they are not enabled.
+Time taken for save: 0.07177s.
+====== dataset: lastfm, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 48  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 292385 from file.. 
+Starting index build with 292385 points... 
+
+0% of index build completed.
+34.2015% of index build completed.
+68.403% of index build completed.Starting final cleanup..done. Link time: 9.25662s
+Index built with degree: max:48  avg:22.0463  min:1  count(deg<2):237
+Indexing time: 9.30232
+Not saving tags as they are not enabled.
+Time taken for save: 0.082751s.
+====== dataset: lastfm, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 64  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 292385 from file.. 
+Starting index build with 292385 points... 
+
+0% of index build completed.
+34.2015% of index build completed.
+68.403% of index build completed.Starting final cleanup..done. Link time: 8.55128s
+Index built with degree: max:64  avg:23.6085  min:1  count(deg<2):245
+Indexing time: 8.5971
+Not saving tags as they are not enabled.
+Time taken for save: 0.0826s.
+====== dataset: lastfm, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 96  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 292385 from file.. 
+Starting index build with 292385 points... 
+
+0% of index build completed.
+34.2015% of index build completed.
+68.403% of index build completed.Starting final cleanup..done. Link time: 8.03471s
+Index built with degree: max:96  avg:24.6163  min:1  count(deg<2):238
+Indexing time: 8.08145
+Not saving tags as they are not enabled.
+Time taken for save: 0.087735s.
+====== dataset: lastfm, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 128  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 292385 from file.. 
+Starting index build with 292385 points... 
+
+0% of index build completed.
+34.2015% of index build completed.
+68.403% of index build completed.Starting final cleanup..done. Link time: 7.93091s
+Index built with degree: max:128  avg:24.8281  min:1  count(deg<2):230
+Indexing time: 7.97577
+Not saving tags as they are not enabled.
+Time taken for save: 0.086884s.
+====== dataset: mnist, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 8  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 4.43254s
+Index built with degree: max:8  avg:7.92892  min:1  count(deg<2):12
+Indexing time: 4.52478
+Not saving tags as they are not enabled.
+Time taken for save: 0.16171s.
+====== dataset: mnist, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 16  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 6.04381s
+Index built with degree: max:16  avg:15.4353  min:1  count(deg<2):2
+Indexing time: 6.1305
+Not saving tags as they are not enabled.
+Time taken for save: 0.161625s.
+====== dataset: mnist, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 24  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 7.8881s
+Index built with degree: max:24  avg:21.9651  min:1  count(deg<2):2
+Indexing time: 7.98026
+Not saving tags as they are not enabled.
+Time taken for save: 0.159413s.
+====== dataset: mnist, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 32  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 8.362s
+Index built with degree: max:32  avg:27.0512  min:1  count(deg<2):3
+Indexing time: 8.44673
+Not saving tags as they are not enabled.
+Time taken for save: 0.157179s.
+====== dataset: mnist, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 48  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 8.56722s
+Index built with degree: max:48  avg:34.0364  min:1  count(deg<2):3
+Indexing time: 8.65228
+Not saving tags as they are not enabled.
+Time taken for save: 0.158396s.
+====== dataset: mnist, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 64  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 8.67811s
+Index built with degree: max:64  avg:39.1994  min:1  count(deg<2):3
+Indexing time: 8.76377
+Not saving tags as they are not enabled.
+Time taken for save: 0.157006s.
+====== dataset: mnist, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 96  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 9.38236s
+Index built with degree: max:96  avg:45.917  min:1  count(deg<2):3
+Indexing time: 9.46799
+Not saving tags as they are not enabled.
+Time taken for save: 0.158389s.
+====== dataset: mnist, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 128  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 60000 from file.. 
+Starting index build with 60000 points... 
+
+0% of index build completed.Starting final cleanup..done. Link time: 9.40947s
+Index built with degree: max:128  avg:49.4081  min:1  count(deg<2):3
+Indexing time: 9.49679
+Not saving tags as they are not enabled.
+Time taken for save: 0.162452s.
+====== dataset: nytimes, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 8  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+
+0% of index build completed.
+34.4828% of index build completed.
+68.9655% of index build completed.Starting final cleanup..done. Link time: 10.2596s
+Index built with degree: max:8  avg:2.66314  min:1  count(deg<2):208633
+Indexing time: 10.4029
+Not saving tags as they are not enabled.
+Time taken for save: 0.46429s.
+====== dataset: nytimes, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 16  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+
+0% of index build completed.
+34.4828% of index build completed.
+68.9655% of index build completed.Starting final cleanup..done. Link time: 13.5348s
+Index built with degree: max:16  avg:4.81588  min:1  count(deg<2):190834
+Indexing time: 13.6781
+Not saving tags as they are not enabled.
+Time taken for save: 0.477485s.
+====== dataset: nytimes, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 24  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+
+0% of index build completed.
+34.4828% of index build completed.
+68.9655% of index build completed.Starting final cleanup..done. Link time: 15.4945s
+Index built with degree: max:24  avg:6.7006  min:1  count(deg<2):182272
+Indexing time: 15.634
+Not saving tags as they are not enabled.
+Time taken for save: 0.447577s.
+====== dataset: nytimes, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 32  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+
+0% of index build completed.
+34.4828% of index build completed.
+68.9655% of index build completed.Starting final cleanup..done. Link time: 15.9515s
+Index built with degree: max:32  avg:8.03  min:1  count(deg<2):180855
+Indexing time: 16.0933
+Not saving tags as they are not enabled.
+Time taken for save: 0.437205s.
+====== dataset: nytimes, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 48  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+
+0% of index build completed.
+34.4828% of index build completed.
+68.9655% of index build completed.Starting final cleanup..done. Link time: 18.7906s
+Index built with degree: max:48  avg:10.3988  min:1  count(deg<2):174151
+Indexing time: 18.929
+Not saving tags as they are not enabled.
+Time taken for save: 0.443182s.
+====== dataset: nytimes, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 64  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+
+0% of index build completed.
+34.4828% of index build completed.
+68.9655% of index build completed.Starting final cleanup..done. Link time: 19.9144s
+Index built with degree: max:64  avg:11.5565  min:1  count(deg<2):175015
+Indexing time: 20.0499
+Not saving tags as they are not enabled.
+Time taken for save: 0.446944s.
+====== dataset: nytimes, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 96  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+
+0% of index build completed.
+34.4828% of index build completed.
+68.9655% of index build completed.Starting final cleanup..done. Link time: 22.1324s
+Index built with degree: max:96  avg:13.3035  min:1  count(deg<2):168981
+Indexing time: 22.2753
+Not saving tags as they are not enabled.
+Time taken for save: 0.482036s.
+====== dataset: nytimes, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 128  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+
+0% of index build completed.
+34.4828% of index build completed.
+68.9655% of index build completed.Starting final cleanup..done. Link time: 22.217s
+Index built with degree: max:128  avg:13.8678  min:1  count(deg<2):166546
+Indexing time: 22.3562
+Not saving tags as they are not enabled.
+Time taken for save: 0.458039s.
+====== dataset: sift, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 8  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1000000 from file.. 
+Starting index build with 1000000 points... 
+
+0% of index build completed.
+10% of index build completed.
+20% of index build completed.
+30% of index build completed.
+40% of index build completed.
+50% of index build completed.
+60% of index build completed.
+70% of index build completed.
+80% of index build completed.
+90% of index build completed.Starting final cleanup..done. Link time: 37.1308s
+Index built with degree: max:8  avg:7.9855  min:2  count(deg<2):0
+Indexing time: 37.3706
+Not saving tags as they are not enabled.
+Time taken for save: 0.367263s.
+====== dataset: sift, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 16  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1000000 from file.. 
+Starting index build with 1000000 points... 
+
+0% of index build completed.
+10% of index build completed.
+20% of index build completed.
+30% of index build completed.
+40% of index build completed.
+50% of index build completed.
+60% of index build completed.
+70% of index build completed.
+80% of index build completed.
+90% of index build completed.Starting final cleanup..done. Link time: 59.333s
+Index built with degree: max:16  avg:15.8953  min:5  count(deg<2):0
+Indexing time: 59.5826
+Not saving tags as they are not enabled.
+Time taken for save: 0.406093s.
+====== dataset: sift, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 24  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1000000 from file.. 
+Starting index build with 1000000 points... 
+
+0% of index build completed.
+10% of index build completed.
+20% of index build completed.
+30% of index build completed.
+40% of index build completed.
+50% of index build completed.
+60% of index build completed.
+70% of index build completed.
+80% of index build completed.
+90% of index build completed.Starting final cleanup..done. Link time: 70.8257s
+Index built with degree: max:24  avg:23.5841  min:4  count(deg<2):0
+Indexing time: 71.0789
+Not saving tags as they are not enabled.
+Time taken for save: 0.395384s.
+====== dataset: sift, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 32  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1000000 from file.. 
+Starting index build with 1000000 points... 
+
+0% of index build completed.
+10% of index build completed.
+20% of index build completed.
+30% of index build completed.
+40% of index build completed.
+50% of index build completed.
+60% of index build completed.
+70% of index build completed.
+80% of index build completed.
+90% of index build completed.Starting final cleanup..done. Link time: 86.8049s
+Index built with degree: max:32  avg:30.8239  min:5  count(deg<2):0
+Indexing time: 87.0432
+Not saving tags as they are not enabled.
+Time taken for save: 0.410327s.
+====== dataset: sift, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 48  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1000000 from file.. 
+Starting index build with 1000000 points... 
+
+0% of index build completed.
+10% of index build completed.
+20% of index build completed.
+30% of index build completed.
+40% of index build completed.
+50% of index build completed.
+60% of index build completed.
+70% of index build completed.
+80% of index build completed.
+90% of index build completed.Starting final cleanup..done. Link time: 105.466s
+Index built with degree: max:48  avg:43.0978  min:4  count(deg<2):0
+Indexing time: 105.701
+Not saving tags as they are not enabled.
+Time taken for save: 0.456606s.
+====== dataset: sift, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 64  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1000000 from file.. 
+Starting index build with 1000000 points... 
+
+0% of index build completed.
+10% of index build completed.
+20% of index build completed.
+30% of index build completed.
+40% of index build completed.
+50% of index build completed.
+60% of index build completed.
+70% of index build completed.
+80% of index build completed.
+90% of index build completed.Starting final cleanup..done. Link time: 118.159s
+Index built with degree: max:64  avg:52.0208  min:4  count(deg<2):0
+Indexing time: 118.402
+Not saving tags as they are not enabled.
+Time taken for save: 0.491626s.
+====== dataset: sift, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 96  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1000000 from file.. 
+Starting index build with 1000000 points... 
+
+0% of index build completed.
+10% of index build completed.
+20% of index build completed.
+30% of index build completed.
+40% of index build completed.
+50% of index build completed.
+60% of index build completed.
+70% of index build completed.
+80% of index build completed.
+90% of index build completed.Starting final cleanup..done. Link time: 130.105s
+Index built with degree: max:96  avg:63.121  min:4  count(deg<2):0
+Indexing time: 130.338
+Not saving tags as they are not enabled.
+Time taken for save: 0.56761s.
+====== dataset: sift, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 128  Lbuild: 200  alpha: 1.2  #threads: 8
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1000000 from file.. 
+Starting index build with 1000000 points... 
+
+0% of index build completed.
+10% of index build completed.
+20% of index build completed.
+30% of index build completed.
+40% of index build completed.
+50% of index build completed.
+60% of index build completed.
+70% of index build completed.
+80% of index build completed.
+90% of index build completed.Starting final cleanup..done. Link time: 135.581s
+Index built with degree: max:128  avg:69.7441  min:5  count(deg<2):0
+Indexing time: 135.823
+Not saving tags as they are not enabled.
+Time taken for save: 0.640639s.

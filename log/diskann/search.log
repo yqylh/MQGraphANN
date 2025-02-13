@@ -1,0 +1,1056 @@
+====== dataset: fashionmnist, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./fashionmnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./fashionmnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./fashionmnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000833816s
+From graph header, expected_file_size: 2057948, _max_observed_degree: 8, _start: 37961, file_frozen_pts: 0
+Loading vamana graph fashionmnist/index_R8_L200_A1.2...done. Index has 60000 nodes and 454481 out-edges, _start is set to 37961
+Num frozen points:0 _nd: 60000 _start: 37961 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    54166.63            773.18             2242.77       10118.27       98.51
+Done searching. Now saving results 
+Writing bin: ./fashionmnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./fashionmnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: fashionmnist, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./fashionmnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./fashionmnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./fashionmnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000857605s
+From graph header, expected_file_size: 3587140, _max_observed_degree: 16, _start: 37961, file_frozen_pts: 0
+Loading vamana graph fashionmnist/index_R16_L200_A1.2...done. Index has 60000 nodes and 836779 out-edges, _start is set to 37961
+Num frozen points:0 _nd: 60000 _start: 37961 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    43576.69           1134.66             2815.81       13541.34       99.87
+Done searching. Now saving results 
+Writing bin: ./fashionmnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./fashionmnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: fashionmnist, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./fashionmnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./fashionmnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./fashionmnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000823763s
+From graph header, expected_file_size: 4761412, _max_observed_degree: 24, _start: 37961, file_frozen_pts: 0
+Loading vamana graph fashionmnist/index_R24_L200_A1.2...done. Index has 60000 nodes and 1130347 out-edges, _start is set to 37961
+Num frozen points:0 _nd: 60000 _start: 37961 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    34637.95           1378.27             3566.62       14036.29       99.96
+Done searching. Now saving results 
+Writing bin: ./fashionmnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./fashionmnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: fashionmnist, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./fashionmnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./fashionmnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./fashionmnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000821417s
+From graph header, expected_file_size: 5671940, _max_observed_degree: 32, _start: 37961, file_frozen_pts: 0
+Loading vamana graph fashionmnist/index_R32_L200_A1.2...done. Index has 60000 nodes and 1357979 out-edges, _start is set to 37961
+Num frozen points:0 _nd: 60000 _start: 37961 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    31814.22           1527.23             3865.57       14931.96       99.98
+Done searching. Now saving results 
+Writing bin: ./fashionmnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./fashionmnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: fashionmnist, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./fashionmnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./fashionmnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./fashionmnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.00181596s
+From graph header, expected_file_size: 7024744, _max_observed_degree: 48, _start: 37961, file_frozen_pts: 0
+Loading vamana graph fashionmnist/index_R48_L200_A1.2...done. Index has 60000 nodes and 1696180 out-edges, _start is set to 37961
+Num frozen points:0 _nd: 60000 _start: 37961 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    26791.32           1746.07             4657.35       14178.36       99.99
+Done searching. Now saving results 
+Writing bin: ./fashionmnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./fashionmnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: fashionmnist, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./fashionmnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./fashionmnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./fashionmnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000905969s
+From graph header, expected_file_size: 8006320, _max_observed_degree: 64, _start: 37961, file_frozen_pts: 0
+Loading vamana graph fashionmnist/index_R64_L200_A1.2...done. Index has 60000 nodes and 1941574 out-edges, _start is set to 37961
+Num frozen points:0 _nd: 60000 _start: 37961 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    27873.76           1902.86             4483.98       14997.63       99.99
+Done searching. Now saving results 
+Writing bin: ./fashionmnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./fashionmnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: fashionmnist, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./fashionmnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./fashionmnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./fashionmnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000878656s
+From graph header, expected_file_size: 9160896, _max_observed_degree: 96, _start: 37961, file_frozen_pts: 0
+Loading vamana graph fashionmnist/index_R96_L200_A1.2...done. Index has 60000 nodes and 2230218 out-edges, _start is set to 37961
+Num frozen points:0 _nd: 60000 _start: 37961 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    25423.75           2074.50             4910.78       19444.26       99.99
+Done searching. Now saving results 
+Writing bin: ./fashionmnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./fashionmnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: fashionmnist, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./fashionmnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./fashionmnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./fashionmnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000850852s
+From graph header, expected_file_size: 9621264, _max_observed_degree: 128, _start: 37961, file_frozen_pts: 0
+Loading vamana graph fashionmnist/index_R128_L200_A1.2...done. Index has 60000 nodes and 2345310 out-edges, _start is set to 37961
+Num frozen points:0 _nd: 60000 _start: 37961 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    22278.84           2157.97             5479.10       19781.52       99.99
+Done searching. Now saving results 
+Writing bin: ./fashionmnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./fashionmnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: glove, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./glove/query.fbin ...Metadata: #pts = 10000, #dims = 25, aligned_dim = 32... allocating aligned memory of 1280000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./glove/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./glove/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0457842s
+From graph header, expected_file_size: 41122804, _max_observed_degree: 8, _start: 472724, file_frozen_pts: 0
+Loading vamana graph glove/index_R8_L200_A1.2...done. Index has 1183514 nodes and 9097181 out-edges, _start is set to 472724
+Num frozen points:0 _nd: 1183514 _start: 472724 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1183514
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200   126486.58           1192.04              869.55       14575.72       74.24
+Done searching. Now saving results 
+Writing bin: ./glove/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./glove/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: glove, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./glove/query.fbin ...Metadata: #pts = 10000, #dims = 25, aligned_dim = 32... allocating aligned memory of 1280000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./glove/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./glove/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0466257s
+From graph header, expected_file_size: 76667020, _max_observed_degree: 16, _start: 472724, file_frozen_pts: 0
+Loading vamana graph glove/index_R16_L200_A1.2...done. Index has 1183514 nodes and 17983235 out-edges, _start is set to 472724
+Num frozen points:0 _nd: 1183514 _start: 472724 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1183514
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200   115448.35           2204.28              928.08       18580.48       91.67
+Done searching. Now saving results 
+Writing bin: ./glove/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./glove/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: glove, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./glove/query.fbin ...Metadata: #pts = 10000, #dims = 25, aligned_dim = 32... allocating aligned memory of 1280000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./glove/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./glove/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0476172s
+From graph header, expected_file_size: 108367288, _max_observed_degree: 24, _start: 472724, file_frozen_pts: 0
+Loading vamana graph glove/index_R24_L200_A1.2...done. Index has 1183514 nodes and 25908302 out-edges, _start is set to 472724
+Num frozen points:0 _nd: 1183514 _start: 472724 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1183514
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    98157.92           3094.38             1150.03       17263.54       96.07
+Done searching. Now saving results 
+Writing bin: ./glove/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./glove/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: glove, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./glove/query.fbin ...Metadata: #pts = 10000, #dims = 25, aligned_dim = 32... allocating aligned memory of 1280000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./glove/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./glove/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0461174s
+From graph header, expected_file_size: 134996852, _max_observed_degree: 32, _start: 472724, file_frozen_pts: 0
+Loading vamana graph glove/index_R32_L200_A1.2...done. Index has 1183514 nodes and 32565693 out-edges, _start is set to 472724
+Num frozen points:0 _nd: 1183514 _start: 472724 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1183514
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    93534.70           3827.28             1229.67       17707.52       97.56
+Done searching. Now saving results 
+Writing bin: ./glove/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./glove/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: glove, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./glove/query.fbin ...Metadata: #pts = 10000, #dims = 25, aligned_dim = 32... allocating aligned memory of 1280000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./glove/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./glove/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0462978s
+From graph header, expected_file_size: 173958436, _max_observed_degree: 48, _start: 472724, file_frozen_pts: 0
+Loading vamana graph glove/index_R48_L200_A1.2...done. Index has 1183514 nodes and 42306089 out-edges, _start is set to 472724
+Num frozen points:0 _nd: 1183514 _start: 472724 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1183514
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    78047.70           4940.44             1513.36       15795.45       98.54
+Done searching. Now saving results 
+Writing bin: ./glove/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./glove/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: glove, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./glove/query.fbin ...Metadata: #pts = 10000, #dims = 25, aligned_dim = 32... allocating aligned memory of 1280000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./glove/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./glove/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0456283s
+From graph header, expected_file_size: 199322960, _max_observed_degree: 64, _start: 472724, file_frozen_pts: 0
+Loading vamana graph glove/index_R64_L200_A1.2...done. Index has 1183514 nodes and 48647220 out-edges, _start is set to 472724
+Num frozen points:0 _nd: 1183514 _start: 472724 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1183514
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    73905.28           5685.91             1593.54       15177.65       98.83
+Done searching. Now saving results 
+Writing bin: ./glove/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./glove/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: glove, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./glove/query.fbin ...Metadata: #pts = 10000, #dims = 25, aligned_dim = 32... allocating aligned memory of 1280000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./glove/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./glove/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0458794s
+From graph header, expected_file_size: 230484536, _max_observed_degree: 96, _start: 472724, file_frozen_pts: 0
+Loading vamana graph glove/index_R96_L200_A1.2...done. Index has 1183514 nodes and 56437614 out-edges, _start is set to 472724
+Num frozen points:0 _nd: 1183514 _start: 472724 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1183514
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    72100.22           6548.11             1646.53       15942.34       99.01
+Done searching. Now saving results 
+Writing bin: ./glove/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./glove/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: glove, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./glove/query.fbin ...Metadata: #pts = 10000, #dims = 25, aligned_dim = 32... allocating aligned memory of 1280000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./glove/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./glove/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0459676s
+From graph header, expected_file_size: 248899896, _max_observed_degree: 128, _start: 472724, file_frozen_pts: 0
+Loading vamana graph glove/index_R128_L200_A1.2...done. Index has 1183514 nodes and 61041454 out-edges, _start is set to 472724
+Num frozen points:0 _nd: 1183514 _start: 472724 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1183514
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    69640.60           7040.69             1623.01       18458.73       99.06
+Done searching. Now saving results 
+Writing bin: ./glove/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./glove/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: lastfm, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./lastfm/query.fbin ...Metadata: #pts = 50000, #dims = 65, aligned_dim = 72... allocating aligned memory of 14400000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./lastfm/gt100, size: 40000008, cache_size: 40000008
+Reading truthset file ./lastfm/gt100 ...
+Metadata: #pts = 50000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0043925s
+From graph header, expected_file_size: 9924924, _max_observed_degree: 8, _start: 204364, file_frozen_pts: 0
+Loading vamana graph lastfm/index_R8_L200_A1.2...done. Index has 292385 nodes and 2188840 out-edges, _start is set to 204364
+Num frozen points:0 _nd: 292385 _start: 204364 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 292385
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200   321211.06            874.43              376.36        6268.54       97.19
+Done searching. Now saving results 
+Writing bin: ./lastfm/_200_idx_uint32.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+Writing bin: ./lastfm/_200_dists_float.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+====== dataset: lastfm, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./lastfm/query.fbin ...Metadata: #pts = 50000, #dims = 65, aligned_dim = 72... allocating aligned memory of 14400000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./lastfm/gt100, size: 40000008, cache_size: 40000008
+Reading truthset file ./lastfm/gt100 ...
+Metadata: #pts = 50000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.00546206s
+From graph header, expected_file_size: 16557336, _max_observed_degree: 16, _start: 204364, file_frozen_pts: 0
+Loading vamana graph lastfm/index_R16_L200_A1.2...done. Index has 292385 nodes and 3846943 out-edges, _start is set to 204364
+Num frozen points:0 _nd: 292385 _start: 204364 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 292385
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200   314155.90           1298.16              381.45        6048.41       99.05
+Done searching. Now saving results 
+Writing bin: ./lastfm/_200_idx_uint32.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+Writing bin: ./lastfm/_200_dists_float.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+====== dataset: lastfm, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./lastfm/query.fbin ...Metadata: #pts = 50000, #dims = 65, aligned_dim = 72... allocating aligned memory of 14400000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./lastfm/gt100, size: 40000008, cache_size: 40000008
+Reading truthset file ./lastfm/gt100 ...
+Metadata: #pts = 50000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.00402439s
+From graph header, expected_file_size: 20651080, _max_observed_degree: 24, _start: 204364, file_frozen_pts: 0
+Loading vamana graph lastfm/index_R24_L200_A1.2...done. Index has 292385 nodes and 4870379 out-edges, _start is set to 204364
+Num frozen points:0 _nd: 292385 _start: 204364 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 292385
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200   277075.45           1587.89              432.76       15003.72       99.27
+Done searching. Now saving results 
+Writing bin: ./lastfm/_200_idx_uint32.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+Writing bin: ./lastfm/_200_dists_float.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+====== dataset: lastfm, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./lastfm/query.fbin ...Metadata: #pts = 50000, #dims = 65, aligned_dim = 72... allocating aligned memory of 14400000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./lastfm/gt100, size: 40000008, cache_size: 40000008
+Reading truthset file ./lastfm/gt100 ...
+Metadata: #pts = 50000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.00424556s
+From graph header, expected_file_size: 23429928, _max_observed_degree: 32, _start: 204364, file_frozen_pts: 0
+Loading vamana graph lastfm/index_R32_L200_A1.2...done. Index has 292385 nodes and 5565091 out-edges, _start is set to 204364
+Num frozen points:0 _nd: 292385 _start: 204364 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 292385
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200   294194.35           1771.62              415.14        8080.55       99.40
+Done searching. Now saving results 
+Writing bin: ./lastfm/_200_idx_uint32.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+Writing bin: ./lastfm/_200_dists_float.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+====== dataset: lastfm, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./lastfm/query.fbin ...Metadata: #pts = 50000, #dims = 65, aligned_dim = 72... allocating aligned memory of 14400000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./lastfm/gt100, size: 40000008, cache_size: 40000008
+Reading truthset file ./lastfm/gt100 ...
+Metadata: #pts = 50000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.00408408s
+From graph header, expected_file_size: 26953616, _max_observed_degree: 48, _start: 204364, file_frozen_pts: 0
+Loading vamana graph lastfm/index_R48_L200_A1.2...done. Index has 292385 nodes and 6446013 out-edges, _start is set to 204364
+Num frozen points:0 _nd: 292385 _start: 204364 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 292385
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200   289528.59           2042.67              421.60        6856.58       99.51
+Done searching. Now saving results 
+Writing bin: ./lastfm/_200_idx_uint32.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+Writing bin: ./lastfm/_200_dists_float.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+====== dataset: lastfm, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./lastfm/query.fbin ...Metadata: #pts = 50000, #dims = 65, aligned_dim = 72... allocating aligned memory of 14400000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./lastfm/gt100, size: 40000008, cache_size: 40000008
+Reading truthset file ./lastfm/gt100 ...
+Metadata: #pts = 50000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.00408371s
+From graph header, expected_file_size: 28780636, _max_observed_degree: 64, _start: 204364, file_frozen_pts: 0
+Loading vamana graph lastfm/index_R64_L200_A1.2...done. Index has 292385 nodes and 6902768 out-edges, _start is set to 204364
+Num frozen points:0 _nd: 292385 _start: 204364 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 292385
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200   279852.24           2227.89              438.35        5575.02       99.55
+Done searching. Now saving results 
+Writing bin: ./lastfm/_200_idx_uint32.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+Writing bin: ./lastfm/_200_dists_float.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+====== dataset: lastfm, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./lastfm/query.fbin ...Metadata: #pts = 50000, #dims = 65, aligned_dim = 72... allocating aligned memory of 14400000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./lastfm/gt100, size: 40000008, cache_size: 40000008
+Reading truthset file ./lastfm/gt100 ...
+Metadata: #pts = 50000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.00434041s
+From graph header, expected_file_size: 29959336, _max_observed_degree: 96, _start: 204364, file_frozen_pts: 0
+Loading vamana graph lastfm/index_R96_L200_A1.2...done. Index has 292385 nodes and 7197443 out-edges, _start is set to 204364
+Num frozen points:0 _nd: 292385 _start: 204364 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 292385
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200   261690.67           2398.78              464.59        8201.72       99.54
+Done searching. Now saving results 
+Writing bin: ./lastfm/_200_idx_uint32.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+Writing bin: ./lastfm/_200_dists_float.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+====== dataset: lastfm, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./lastfm/query.fbin ...Metadata: #pts = 50000, #dims = 65, aligned_dim = 72... allocating aligned memory of 14400000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./lastfm/gt100, size: 40000008, cache_size: 40000008
+Reading truthset file ./lastfm/gt100 ...
+Metadata: #pts = 50000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0042337s
+From graph header, expected_file_size: 30206984, _max_observed_degree: 128, _start: 204364, file_frozen_pts: 0
+Loading vamana graph lastfm/index_R128_L200_A1.2...done. Index has 292385 nodes and 7259355 out-edges, _start is set to 204364
+Num frozen points:0 _nd: 292385 _start: 204364 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 292385
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200   273624.62           2416.60              442.07        5730.06       99.58
+Done searching. Now saving results 
+Writing bin: ./lastfm/_200_idx_uint32.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+Writing bin: ./lastfm/_200_dists_float.bin
+bin: #pts = 50000, #dims = 100, size = 20000008B
+Finished writing bin.
+====== dataset: mnist, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./mnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./mnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./mnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000857838s
+From graph header, expected_file_size: 2142964, _max_observed_degree: 8, _start: 9924, file_frozen_pts: 0
+Loading vamana graph mnist/index_R8_L200_A1.2...done. Index has 60000 nodes and 475735 out-edges, _start is set to 9924
+Num frozen points:0 _nd: 60000 _start: 9924 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    59984.55            806.69             2041.49       12353.17       98.31
+Done searching. Now saving results 
+Writing bin: ./mnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./mnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: mnist, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./mnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./mnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./mnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000809881s
+From graph header, expected_file_size: 3944488, _max_observed_degree: 16, _start: 9924, file_frozen_pts: 0
+Loading vamana graph mnist/index_R16_L200_A1.2...done. Index has 60000 nodes and 926116 out-edges, _start is set to 9924
+Num frozen points:0 _nd: 60000 _start: 9924 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    36117.26           1272.30             3428.44       12335.19       99.80
+Done searching. Now saving results 
+Writing bin: ./mnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./mnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: mnist, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./mnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./mnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./mnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000863042s
+From graph header, expected_file_size: 5511656, _max_observed_degree: 24, _start: 9924, file_frozen_pts: 0
+Loading vamana graph mnist/index_R24_L200_A1.2...done. Index has 60000 nodes and 1317908 out-edges, _start is set to 9924
+Num frozen points:0 _nd: 60000 _start: 9924 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    33030.44           1592.43             3742.97       15822.22       99.92
+Done searching. Now saving results 
+Writing bin: ./mnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./mnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: mnist, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./mnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./mnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./mnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000858014s
+From graph header, expected_file_size: 6732304, _max_observed_degree: 32, _start: 9924, file_frozen_pts: 0
+Loading vamana graph mnist/index_R32_L200_A1.2...done. Index has 60000 nodes and 1623070 out-edges, _start is set to 9924
+Num frozen points:0 _nd: 60000 _start: 9924 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    27045.60           1869.81             4611.66       27002.04       99.95
+Done searching. Now saving results 
+Writing bin: ./mnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./mnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: mnist, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./mnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./mnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./mnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000904354s
+From graph header, expected_file_size: 8408760, _max_observed_degree: 48, _start: 9924, file_frozen_pts: 0
+Loading vamana graph mnist/index_R48_L200_A1.2...done. Index has 60000 nodes and 2042184 out-edges, _start is set to 9924
+Num frozen points:0 _nd: 60000 _start: 9924 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    25076.47           2188.75             4985.75       19300.83       99.97
+Done searching. Now saving results 
+Writing bin: ./mnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./mnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: mnist, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./mnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./mnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./mnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.00190751s
+From graph header, expected_file_size: 9647872, _max_observed_degree: 64, _start: 9924, file_frozen_pts: 0
+Loading vamana graph mnist/index_R64_L200_A1.2...done. Index has 60000 nodes and 2351962 out-edges, _start is set to 9924
+Num frozen points:0 _nd: 60000 _start: 9924 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    21176.78           2374.42             5849.20       20633.42       99.98
+Done searching. Now saving results 
+Writing bin: ./mnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./mnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: mnist, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./mnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./mnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./mnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000885766s
+From graph header, expected_file_size: 11260112, _max_observed_degree: 96, _start: 9924, file_frozen_pts: 0
+Loading vamana graph mnist/index_R96_L200_A1.2...done. Index has 60000 nodes and 2755022 out-edges, _start is set to 9924
+Num frozen points:0 _nd: 60000 _start: 9924 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    21166.27           2624.34             5905.24       25210.76       99.98
+Done searching. Now saving results 
+Writing bin: ./mnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./mnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: mnist, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./mnist/query.fbin ...Metadata: #pts = 10000, #dims = 784, aligned_dim = 784... allocating aligned memory of 31360000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./mnist/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./mnist/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.000852405s
+From graph header, expected_file_size: 12097956, _max_observed_degree: 128, _start: 9924, file_frozen_pts: 0
+Loading vamana graph mnist/index_R128_L200_A1.2...done. Index has 60000 nodes and 2964483 out-edges, _start is set to 9924
+Num frozen points:0 _nd: 60000 _start: 9924 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 60000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    18240.37           2813.10             6870.75       21259.16       99.98
+Done searching. Now saving results 
+Writing bin: ./mnist/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./mnist/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: nytimes, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./nytimes/query.fbin ...Metadata: #pts = 10000, #dims = 256, aligned_dim = 256... allocating aligned memory of 10240000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./nytimes/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./nytimes/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0101588s
+From graph header, expected_file_size: 4249272, _max_observed_degree: 8, _start: 938, file_frozen_pts: 0
+Loading vamana graph nytimes/index_R8_L200_A1.2...done. Index has 290000 nodes and 772312 out-edges, _start is set to 938
+Num frozen points:0 _nd: 290000 _start: 938 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 290000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200   123746.65            956.80              922.09       14068.94        8.43
+Done searching. Now saving results 
+Writing bin: ./nytimes/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./nytimes/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: nytimes, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./nytimes/query.fbin ...Metadata: #pts = 10000, #dims = 256, aligned_dim = 256... allocating aligned memory of 10240000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./nytimes/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./nytimes/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0108283s
+From graph header, expected_file_size: 6746444, _max_observed_degree: 16, _start: 938, file_frozen_pts: 0
+Loading vamana graph nytimes/index_R16_L200_A1.2...done. Index has 290000 nodes and 1396605 out-edges, _start is set to 938
+Num frozen points:0 _nd: 290000 _start: 938 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 290000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    95135.07           1614.43             1240.48        9877.62        9.72
+Done searching. Now saving results 
+Writing bin: ./nytimes/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./nytimes/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: nytimes, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./nytimes/query.fbin ...Metadata: #pts = 10000, #dims = 256, aligned_dim = 256... allocating aligned memory of 10240000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./nytimes/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./nytimes/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0102078s
+From graph header, expected_file_size: 8932716, _max_observed_degree: 24, _start: 938, file_frozen_pts: 0
+Loading vamana graph nytimes/index_R24_L200_A1.2...done. Index has 290000 nodes and 1943173 out-edges, _start is set to 938
+Num frozen points:0 _nd: 290000 _start: 938 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 290000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    69725.74           2066.77             1720.92       12158.22       10.39
+Done searching. Now saving results 
+Writing bin: ./nytimes/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./nytimes/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: nytimes, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./nytimes/query.fbin ...Metadata: #pts = 10000, #dims = 256, aligned_dim = 256... allocating aligned memory of 10240000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./nytimes/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./nytimes/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0109726s
+From graph header, expected_file_size: 10474828, _max_observed_degree: 32, _start: 938, file_frozen_pts: 0
+Loading vamana graph nytimes/index_R32_L200_A1.2...done. Index has 290000 nodes and 2328701 out-edges, _start is set to 938
+Num frozen points:0 _nd: 290000 _start: 938 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 290000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    67161.71           2426.99             1782.35       15389.33       10.45
+Done searching. Now saving results 
+Writing bin: ./nytimes/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./nytimes/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: nytimes, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./nytimes/query.fbin ...Metadata: #pts = 10000, #dims = 256, aligned_dim = 256... allocating aligned memory of 10240000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./nytimes/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./nytimes/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.00951062s
+From graph header, expected_file_size: 13222576, _max_observed_degree: 48, _start: 938, file_frozen_pts: 0
+Loading vamana graph nytimes/index_R48_L200_A1.2...done. Index has 290000 nodes and 3015638 out-edges, _start is set to 938
+Num frozen points:0 _nd: 290000 _start: 938 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 290000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    53653.39           2946.62             2278.29       22543.27       11.02
+Done searching. Now saving results 
+Writing bin: ./nytimes/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./nytimes/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: nytimes, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./nytimes/query.fbin ...Metadata: #pts = 10000, #dims = 256, aligned_dim = 256... allocating aligned memory of 10240000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./nytimes/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./nytimes/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0100378s
+From graph header, expected_file_size: 14565584, _max_observed_degree: 64, _start: 938, file_frozen_pts: 0
+Loading vamana graph nytimes/index_R64_L200_A1.2...done. Index has 290000 nodes and 3351390 out-edges, _start is set to 938
+Num frozen points:0 _nd: 290000 _start: 938 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 290000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    49714.79           3327.61             2442.14       13731.11       10.86
+Done searching. Now saving results 
+Writing bin: ./nytimes/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./nytimes/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: nytimes, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./nytimes/query.fbin ...Metadata: #pts = 10000, #dims = 256, aligned_dim = 256... allocating aligned memory of 10240000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./nytimes/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./nytimes/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0103158s
+From graph header, expected_file_size: 16592068, _max_observed_degree: 96, _start: 938, file_frozen_pts: 0
+Loading vamana graph nytimes/index_R96_L200_A1.2...done. Index has 290000 nodes and 3858011 out-edges, _start is set to 938
+Num frozen points:0 _nd: 290000 _start: 938 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 290000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    48745.17           3685.62             2502.77       13667.94       11.72
+Done searching. Now saving results 
+Writing bin: ./nytimes/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./nytimes/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: nytimes, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./nytimes/query.fbin ...Metadata: #pts = 10000, #dims = 256, aligned_dim = 256... allocating aligned memory of 10240000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./nytimes/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./nytimes/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.00907453s
+From graph header, expected_file_size: 17246616, _max_observed_degree: 128, _start: 938, file_frozen_pts: 0
+Loading vamana graph nytimes/index_R128_L200_A1.2...done. Index has 290000 nodes and 4021648 out-edges, _start is set to 938
+Num frozen points:0 _nd: 290000 _start: 938 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 290000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    47028.43           3667.11             2591.35       13321.81       12.61
+Done searching. Now saving results 
+Writing bin: ./nytimes/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./nytimes/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: sift, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./sift/query.fbin ...Metadata: #pts = 10000, #dims = 128, aligned_dim = 128... allocating aligned memory of 5120000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./sift/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./sift/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0364923s
+From graph header, expected_file_size: 35942036, _max_observed_degree: 8, _start: 123742, file_frozen_pts: 0
+Loading vamana graph sift/index_R8_L200_A1.2...done. Index has 1000000 nodes and 7985503 out-edges, _start is set to 123742
+Num frozen points:0 _nd: 1000000 _start: 123742 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1000000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    76448.47           1169.30             1512.15       18779.49       81.63
+Done searching. Now saving results 
+Writing bin: ./sift/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./sift/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: sift, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./sift/query.fbin ...Metadata: #pts = 10000, #dims = 128, aligned_dim = 128... allocating aligned memory of 5120000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./sift/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./sift/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0392568s
+From graph header, expected_file_size: 67581220, _max_observed_degree: 16, _start: 123742, file_frozen_pts: 0
+Loading vamana graph sift/index_R16_L200_A1.2...done. Index has 1000000 nodes and 15895299 out-edges, _start is set to 123742
+Num frozen points:0 _nd: 1000000 _start: 123742 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1000000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    28645.44           2182.56             4257.58       43221.91       95.07
+Done searching. Now saving results 
+Writing bin: ./sift/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./sift/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: sift, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./sift/query.fbin ...Metadata: #pts = 10000, #dims = 128, aligned_dim = 128... allocating aligned memory of 5120000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./sift/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./sift/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0392537s
+From graph header, expected_file_size: 98336460, _max_observed_degree: 24, _start: 123742, file_frozen_pts: 0
+Loading vamana graph sift/index_R24_L200_A1.2...done. Index has 1000000 nodes and 23584109 out-edges, _start is set to 123742
+Num frozen points:0 _nd: 1000000 _start: 123742 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1000000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    44476.39           3039.60             2734.14       18140.45       97.95
+Done searching. Now saving results 
+Writing bin: ./sift/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./sift/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: sift, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./sift/query.fbin ...Metadata: #pts = 10000, #dims = 128, aligned_dim = 128... allocating aligned memory of 5120000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./sift/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./sift/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0376415s
+From graph header, expected_file_size: 127295488, _max_observed_degree: 32, _start: 123742, file_frozen_pts: 0
+Loading vamana graph sift/index_R32_L200_A1.2...done. Index has 1000000 nodes and 30823866 out-edges, _start is set to 123742
+Num frozen points:0 _nd: 1000000 _start: 123742 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1000000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    38945.64           3766.96             3134.44       18419.81       98.94
+Done searching. Now saving results 
+Writing bin: ./sift/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./sift/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: sift, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./sift/query.fbin ...Metadata: #pts = 10000, #dims = 128, aligned_dim = 128... allocating aligned memory of 5120000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./sift/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./sift/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0390429s
+From graph header, expected_file_size: 176391088, _max_observed_degree: 48, _start: 123742, file_frozen_pts: 0
+Loading vamana graph sift/index_R48_L200_A1.2...done. Index has 1000000 nodes and 43097766 out-edges, _start is set to 123742
+Num frozen points:0 _nd: 1000000 _start: 123742 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1000000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    29670.16           4963.89             4155.64       19730.17       99.58
+Done searching. Now saving results 
+Writing bin: ./sift/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./sift/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: sift, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./sift/query.fbin ...Metadata: #pts = 10000, #dims = 128, aligned_dim = 128... allocating aligned memory of 5120000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./sift/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./sift/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0391824s
+From graph header, expected_file_size: 212083212, _max_observed_degree: 64, _start: 123742, file_frozen_pts: 0
+Loading vamana graph sift/index_R64_L200_A1.2...done. Index has 1000000 nodes and 52020797 out-edges, _start is set to 123742
+Num frozen points:0 _nd: 1000000 _start: 123742 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1000000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    26505.04           5861.62             4698.18       23617.18       99.76
+Done searching. Now saving results 
+Writing bin: ./sift/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./sift/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: sift, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./sift/query.fbin ...Metadata: #pts = 10000, #dims = 128, aligned_dim = 128... allocating aligned memory of 5120000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./sift/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./sift/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0400128s
+From graph header, expected_file_size: 256484016, _max_observed_degree: 96, _start: 123742, file_frozen_pts: 0
+Loading vamana graph sift/index_R96_L200_A1.2...done. Index has 1000000 nodes and 63120998 out-edges, _start is set to 123742
+Num frozen points:0 _nd: 1000000 _start: 123742 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1000000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    23410.96           7022.94             5331.21       22074.07       99.85
+Done searching. Now saving results 
+Writing bin: ./sift/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./sift/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+====== dataset: sift, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Reading (with alignment) bin file ./sift/query.fbin ...Metadata: #pts = 10000, #dims = 128, aligned_dim = 128... allocating aligned memory of 5120000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: ./sift/gt100, size: 8000008, cache_size: 8000008
+Reading truthset file ./sift/gt100 ...
+Metadata: #pts = 10000, #dims = 100... 
+L2: Using AVX2 distance computation DistanceL2Float
+Resizing took: 0.0385257s
+From graph header, expected_file_size: 282976468, _max_observed_degree: 128, _start: 123742, file_frozen_pts: 0
+Loading vamana graph sift/index_R128_L200_A1.2...done. Index has 1000000 nodes and 69744111 out-edges, _start is set to 123742
+Num frozen points:0 _nd: 1000000 _start: 123742 size(_location_to_tag): 0 size(_tag_to_location):0 Max points: 1000000
+Index loaded
+Using 128 threads to search
+  Ls         QPS     Avg dist cmps  Mean Latency (mus)   99.9 Latency  Recall@100
+=================================================================================
+ 200    21422.15           7730.12             5849.27       22104.96       99.88
+Done searching. Now saving results 
+Writing bin: ./sift/_200_idx_uint32.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.
+Writing bin: ./sift/_200_dists_float.bin
+bin: #pts = 10000, #dims = 100, size = 4000008B
+Finished writing bin.

@@ -1,0 +1,80 @@
+====== dataset: nytimes, R: 8, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 8  Lbuild: 200  alpha: 1.2  #threads: 8
+Inner product: Using AVX2 implementation AVXDistanceInnerProductFloat
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+0% of index build completed.34.4828% of index build completed.68.9655% of index build completed.Starting final cleanup..done. Link time: 15.4052s
+Index built with degree: max:8  avg:7.99841  min:3  count(deg<2):0
+Indexing time: 15.585
+Not saving tags as they are not enabled.
+Time taken for save: 0.568919s.
+====== dataset: nytimes, R: 16, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 16  Lbuild: 200  alpha: 1.2  #threads: 8
+Inner product: Using AVX2 implementation AVXDistanceInnerProductFloat
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+0% of index build completed.34.4828% of index build completed.68.9655% of index build completed.Starting final cleanup..done. Link time: 23.341s
+Index built with degree: max:16  avg:15.9756  min:3  count(deg<2):0
+Indexing time: 23.4961
+Not saving tags as they are not enabled.
+Time taken for save: 0.47469s.
+====== dataset: nytimes, R: 24, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 24  Lbuild: 200  alpha: 1.2  #threads: 8
+Inner product: Using AVX2 implementation AVXDistanceInnerProductFloat
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+0% of index build completed.34.4828% of index build completed.68.9655% of index build completed.Starting final cleanup..done. Link time: 32.103s
+Index built with degree: max:24  avg:23.8918  min:3  count(deg<2):0
+Indexing time: 32.2385
+Not saving tags as they are not enabled.
+Time taken for save: 0.479613s.
+====== dataset: nytimes, R: 32, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 32  Lbuild: 200  alpha: 1.2  #threads: 8
+Inner product: Using AVX2 implementation AVXDistanceInnerProductFloat
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+0% of index build completed.34.4828% of index build completed.68.9655% of index build completed.Starting final cleanup..done. Link time: 40.4428s
+Index built with degree: max:32  avg:31.7099  min:3  count(deg<2):0
+Indexing time: 40.5889
+Not saving tags as they are not enabled.
+Time taken for save: 0.597999s.
+====== dataset: nytimes, R: 48, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 48  Lbuild: 200  alpha: 1.2  #threads: 8
+Inner product: Using AVX2 implementation AVXDistanceInnerProductFloat
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+0% of index build completed.34.4828% of index build completed.68.9655% of index build completed.Starting final cleanup..done. Link time: 56.7751s
+Index built with degree: max:48  avg:46.9525  min:4  count(deg<2):0
+Indexing time: 56.9189
+Not saving tags as they are not enabled.
+Time taken for save: 0.506099s.
+====== dataset: nytimes, R: 64, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 64  Lbuild: 200  alpha: 1.2  #threads: 8
+Inner product: Using AVX2 implementation AVXDistanceInnerProductFloat
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+0% of index build completed.34.4828% of index build completed.68.9655% of index build completed.Starting final cleanup..done. Link time: 72.6249s
+Index built with degree: max:64  avg:61.5515  min:3  count(deg<2):0
+Indexing time: 72.7593
+Not saving tags as they are not enabled.
+Time taken for save: 0.511327s.
+====== dataset: nytimes, R: 96, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 96  Lbuild: 200  alpha: 1.2  #threads: 8
+Inner product: Using AVX2 implementation AVXDistanceInnerProductFloat
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+0% of index build completed.34.4828% of index build completed.68.9655% of index build completed.Starting final cleanup..done. Link time: 100.404s
+Index built with degree: max:96  avg:88.4542  min:4  count(deg<2):0
+Indexing time: 100.549
+Not saving tags as they are not enabled.
+Time taken for save: 0.526367s.
+====== dataset: nytimes, R: 128, L: 200, alpha: 1.2, num_threads: 8 ======
+Starting index build with R: 128  Lbuild: 200  alpha: 1.2  #threads: 8
+Inner product: Using AVX2 implementation AVXDistanceInnerProductFloat
+Using only first 290000 from file.. 
+Starting index build with 290000 points... 
+0% of index build completed.34.4828% of index build completed.68.9655% of index build completed.Starting final cleanup..done. Link time: 124.205s
+Index built with degree: max:128  avg:111.014  min:3  count(deg<2):0
+Indexing time: 124.351
+Not saving tags as they are not enabled.
+Time taken for save: 0.524974s.
