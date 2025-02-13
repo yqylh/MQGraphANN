@@ -14,7 +14,7 @@ int main(int argc, char **argv ){
     search_center = atoi(argv[4]);
     CircleIndex index(baseFileName, ef, m_circle, m_sparse, search_center);
     index.buildIndex();
+    // index.loadIndex();
     index.searchIndex();
-
     return 0;
 }

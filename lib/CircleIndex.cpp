@@ -33,10 +33,11 @@ public:
     std::vector<index_t > circleIndex; // 环索引
     index_t sparseIndex; // 稀疏索引
     index_t centerIndex; // 中心索引
-    hnswlib::L2Space sparseSpaceL2 = hnswlib::L2Space(D);
-    hnswlib::InnerProductSpace sparseSpaceIP = hnswlib::InnerProductSpace(D);
-    hnswlib::L2Space centerSpaceL2 = hnswlib::L2Space(D);
-    hnswlib::InnerProductSpace centerSpaceIP = hnswlib::InnerProductSpace(D);
+    hnswlib::L2Space *sparseSpaceL2;
+    hnswlib::InnerProductSpace *sparseSpaceIP;
+
+    hnswlib::L2Space *centerSpaceL2;
+    hnswlib::InnerProductSpace *centerSpaceIP;
     std::vector<hnswlib::L2Space> circleSpaceL2;
     std::vector<hnswlib::InnerProductSpace> circleSpaceIP;
 
@@ -61,6 +62,10 @@ public:
         bothName = "./dataset/circle/" + std::to_string(DatabaseSelect) + "_ef_" + std::to_string(ef) + "_m_circle_" + std::to_string(m_circle) + "_m_sparse_" + std::to_string(m_sparse);
         // 初始化索引
         circleIndex.resize(cluster_num);
+        sparseSpaceL2 = new hnswlib::L2Space(D);
+        centerSpaceL2 = new hnswlib::L2Space(D);
+        sparseSpaceIP = new hnswlib::InnerProductSpace(D);
+        centerSpaceIP = new hnswlib::InnerProductSpace(D);
         for (int i = 0; i < cluster_num; i++) {
             circleSpaceL2.push_back(hnswlib::L2Space(D));
             circleSpaceIP.push_back(hnswlib::InnerProductSpace(D));
@@ -74,6 +79,10 @@ public:
         }
         delete sparseIndex;
         delete centerIndex;
+        delete sparseSpaceL2;
+        delete centerSpaceL2;
+        delete sparseSpaceIP;
+        delete centerSpaceIP;
     }
     void paralleKmeans() {
         // 设置最大迭代次数
@@ -310,9 +319,9 @@ public:
         // 对每个簇的稀疏区域建立索引
         auto sparseName = bothName + ".sparse";
         if (DatabaseSelect >= 10) {
-            sparseIndex = new hnswlib::HierarchicalNSW<float>(&sparseSpaceIP, sparse.size(), m_sparse, ef);
+            sparseIndex = new hnswlib::HierarchicalNSW<float>(sparseSpaceIP, sparse.size(), m_sparse, ef);
         } else {
-            sparseIndex = new hnswlib::HierarchicalNSW<float>(&sparseSpaceL2, sparse.size(), m_sparse, ef);
+            sparseIndex = new hnswlib::HierarchicalNSW<float>(sparseSpaceL2, sparse.size(), m_sparse, ef);
         }
         for (auto & id : sparse) {
             if (DatabaseSelect >= 10) {
@@ -328,9 +337,9 @@ public:
         // 对每个簇的中心点建立近邻图索引
         auto centerName = bothName + ".center";
         if (DatabaseSelect >= 10) {
-            centerIndex = new hnswlib::HierarchicalNSW<float>(&centerSpaceIP, cluster_num, m_sparse, ef);
+            centerIndex = new hnswlib::HierarchicalNSW<float>(centerSpaceIP, cluster_num, m_sparse, ef);
         } else {
-            centerIndex = new hnswlib::HierarchicalNSW<float>(&centerSpaceL2, cluster_num, m_sparse, ef);
+            centerIndex = new hnswlib::HierarchicalNSW<float>(centerSpaceL2, cluster_num, m_sparse, ef);
         }
         for (int i = 0; i < cluster_num; i++) {
             if (DatabaseSelect >= 10) {
@@ -442,14 +451,14 @@ public:
         auto sparseName = bothName + ".sparse";
         auto circleName = bothName + ".circle_";
         if (DatabaseSelect >= 10) {
-            centerIndex = new hnswlib::HierarchicalNSW<float>(&centerSpaceIP, centerName.c_str());
+            centerIndex = new hnswlib::HierarchicalNSW<float>(centerSpaceIP, centerName.c_str());
         } else {
-            centerIndex = new hnswlib::HierarchicalNSW<float>(&centerSpaceL2, centerName.c_str());
+            centerIndex = new hnswlib::HierarchicalNSW<float>(centerSpaceL2, centerName.c_str());
         }
         if (DatabaseSelect >= 10) {
-            sparseIndex = new hnswlib::HierarchicalNSW<float>(&sparseSpaceIP, sparseName.c_str());
+            sparseIndex = new hnswlib::HierarchicalNSW<float>(sparseSpaceIP, sparseName.c_str());
         } else {
-            sparseIndex = new hnswlib::HierarchicalNSW<float>(&sparseSpaceL2, sparseName.c_str());
+            sparseIndex = new hnswlib::HierarchicalNSW<float>(sparseSpaceL2, sparseName.c_str());
         }
         for (int i = 0; i < circleSize; i++) {
             auto thisName = circleName + std::to_string(i) ;
@@ -484,18 +493,26 @@ public:
             auto resultCenter = centerIndex->searchKnn(temp.data(), search_center);
             end = std::chrono::steady_clock::now();
             allTime += (end - start)/ 1us;
+            std::vector<int> circleWait;
+
             while (!resultCenter.empty()) {
                 int ans = resultCenter.top().second;
                 resultCenter.pop();
-                start = std::chrono::steady_clock::now();
-                auto result = circleIndex[ans]->searchKnn(temp.data(), K);
-                end = std::chrono::steady_clock::now();
-                allTime += (end - start)/ 1us;
-                while (!result.empty()) {
-                    resultSparse.push(result.top());
-                    result.pop();
+                circleWait.push_back(ans);
+            }
+            start = std::chrono::steady_clock::now();
+            #pragma omp parallel for
+            for (auto & ans : circleWait) {
+                auto circleResult = circleIndex[ans]->searchKnn(temp.data(), K);
+                while (!circleResult.empty()) {
+                    #pragma omp critical
+                    {
+                        result.push_back(circleResult.top());
+                    }
+                    circleResult.pop();
                 }
             }
+            end = std::chrono::steady_clock::now();
             std::sort(result.begin(), result.end(), [](const std::pair<float, int> &a, const std::pair<float, int> &b) {
                 return a.first < b.first;
             });
@@ -514,27 +531,6 @@ public:
         logFile << "Recall: " << recall << std::endl;
         logFile << "avgTime: " << allTime / dataSet->queryData.size() << "us" << std::endl;
     }
-    // for (int i = 0; i < dataSet->queryData.size(); i++) {
-    //     std::vector<float> temp;
-    //     std::vector<std::pair<float, int>> result;
-    //     for (auto & circle : circle)
-    //     std::sort(result.begin(), result.end(), [](const std::pair<float, int> &a, const std::pair<float, int> &b) {
-    //         return a.first < b.first;
-    //     });
-    //     // 计算正确率
-    //     for (int j = 0; j < K; j++) {
-    //         int ans = result[j].second;
-    //         for (auto & ansItem : dataSet->ansData[i].vectors) {
-    //             if (ans == ansItem) {
-    //                 correct++;
-    //                 break;
-    //             }
-    //         }
-    //     }
-    // }
-    // float recall = correct / (dataSet->queryData.size() * K);
-    // logFile << "Recall: " << recall << std::endl;
-    // logFile << "avgTime: " << allTime / dataSet->queryData.size() << "us" << std::endl;
 };
 
 #endif

@@ -5,5 +5,5 @@ g++ circle.cpp -o main -g -std=c++17 -O3 -DDatabaseSelect=$datasetS  -fopenmp -p
     -I ./res/hdf5/HighFive/include/ \
     -lhdf5_cpp -lhdf5 -L /usr/lib/x86_64-linux-gnu/hdf5/serial
 
-./main 200 48 48 100
+./main 200 48 48 10
 rm main
