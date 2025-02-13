@@ -11,7 +11,7 @@ std::string solveName(int dataset, int M, int ef, int zero) {
         + "_" + std::to_string(zero) + ".bin";
     return index;
 }
-
+std::ofstream out;
 int main(int argc, char **argv ){
     if (argc != 3) {
         std::cout << "Usage: ./main <M> <ef>" << std::endl;
@@ -39,6 +39,7 @@ int main(int argc, char **argv ){
             alg_hnsw = new hnswlib::HierarchicalNSW<float>(&space_cos, index.c_str());
         } else  alg_hnsw = new hnswlib::HierarchicalNSW<float>(&space, index.c_str());
     } else {
+        auto bugin = std::chrono::steady_clock::now();
         if (DatabaseSelect >= 10) {
             alg_hnsw = new hnswlib::HierarchicalNSW<float>(&space_cos, maxbaseNum, M, ef);
         } else alg_hnsw = new hnswlib::HierarchicalNSW<float>(&space, maxbaseNum, M, ef);
@@ -56,52 +57,59 @@ int main(int argc, char **argv ){
                 alg_hnsw->addPoint(dataSet->baseData[i].vectors.data(), i);
         }
         alg_hnsw->saveIndex(index.c_str());
-    }
-    // Query the elements for themselves and measure recall
-    float correct = 0;
-    double allTime = 0;
-    for (int i = 0; i < dataSet->queryData.size(); i++) {
-        std::priority_queue<std::pair<float, hnswlib::labeltype>> result;
-        auto start = std::chrono::steady_clock::now();
-        if (DatabaseSelect == 5) {
-            std::vector<float> temp;
-            for (auto & item : dataSet->queryData[i].vectors) {
-                temp.push_back(item);
-            }
-            result = alg_hnsw->searchKnn(temp.data(), K);
-        } else if (DatabaseSelect >= 10) {
-            std::vector<float> temp = norm_vector(dataSet->queryData[i].vectors);
-            result = alg_hnsw->searchKnn(temp.data(), K);
-        } else
-            result = alg_hnsw->searchKnn(dataSet->queryData[i].vectors.data(), K);
         auto end = std::chrono::steady_clock::now();
-        allTime += (end - start)/ 1us;
-        while (!result.empty()) {
-            int ans = result.top().second;
-            result.pop();
-            for (auto & ansItem : dataSet->ansData[i].vectors) {
-                if (ans == ansItem) {
-                    correct++;
-                    break;
-                }
-            }
-        }
+        out.open("./log/build-hnsw", std::ios::app);
+        out
+            << "Dataset=" << DatabaseSelect << "\t"
+            << "M=" << M << "\t"
+            << "buildTime=" << (end - bugin) / 1s
+            << std::endl;
+        out.close();
     }
-    float recall = correct / (dataSet->queryData.size() * K);
-    std::ofstream out;
-    #ifdef ZERO
-        out.open("./result/create-nsw-" + std::to_string(DatabaseSelect), std::ios::app);
-    #else
-        out.open("./result/create-hnsw-" + std::to_string(DatabaseSelect), std::ios::app);
-    #endif
-    out
-        << "Dataset=" << DatabaseSelect << "\t"
-        << "M=" << M << "\t"
-        << "ef=" << ef << "\t"
-        << "Recall=" << recall << "\t" 
-        << "avgTime=" << allTime / dataSet->queryData.size() << "us" 
-        << std::endl;
-    out.close();
+    // // Query the elements for themselves and measure recall
+    // float correct = 0;
+    // double allTime = 0;
+    // for (int i = 0; i < dataSet->queryData.size(); i++) {
+    //     std::priority_queue<std::pair<float, hnswlib::labeltype>> result;
+    //     auto start = std::chrono::steady_clock::now();
+    //     if (DatabaseSelect == 5) {
+    //         std::vector<float> temp;
+    //         for (auto & item : dataSet->queryData[i].vectors) {
+    //             temp.push_back(item);
+    //         }
+    //         result = alg_hnsw->searchKnn(temp.data(), K);
+    //     } else if (DatabaseSelect >= 10) {
+    //         std::vector<float> temp = norm_vector(dataSet->queryData[i].vectors);
+    //         result = alg_hnsw->searchKnn(temp.data(), K);
+    //     } else
+    //         result = alg_hnsw->searchKnn(dataSet->queryData[i].vectors.data(), K);
+    //     auto end = std::chrono::steady_clock::now();
+    //     allTime += (end - start)/ 1us;
+    //     while (!result.empty()) {
+    //         int ans = result.top().second;
+    //         result.pop();
+    //         for (auto & ansItem : dataSet->ansData[i].vectors) {
+    //             if (ans == ansItem) {
+    //                 correct++;
+    //                 break;
+    //             }
+    //         }
+    //     }
+    // }
+    // float recall = correct / (dataSet->queryData.size() * K);
+    // #ifdef ZERO
+    //     out.open("./result/create-nsw-" + std::to_string(DatabaseSelect), std::ios::app);
+    // #else
+    //     out.open("./result/create-hnsw-" + std::to_string(DatabaseSelect), std::ios::app);
+    // #endif
+    // out
+    //     << "Dataset=" << DatabaseSelect << "\t"
+    //     << "M=" << M << "\t"
+    //     << "ef=" << ef << "\t"
+    //     << "Recall=" << recall << "\t" 
+    //     << "avgTime=" << allTime / dataSet->queryData.size() << "us" 
+    //     << std::endl;
+    // out.close();
     delete alg_hnsw;
     delete dataSet;
     return 0;

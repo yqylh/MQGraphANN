@@ -1,0 +1,8 @@
+Dataset=10	M=24	ef=200	Recall=0.962371	avgTime=147.957us
+Dataset=10	M=8	ef=200	Recall=0.940536	avgTime=99.789us
+Dataset=10	M=16	ef=200	Recall=0.960016	avgTime=161.945us
+Dataset=10	M=32	ef=200	Recall=0.962772	avgTime=119.8us
+Dataset=10	M=64	ef=200	Recall=0.963243	avgTime=127.567us
+Dataset=10	M=48	ef=200	Recall=0.96313	avgTime=160.608us
+Dataset=10	M=96	ef=200	Recall=0.96278	avgTime=120.034us
+Dataset=10	M=128	ef=200	Recall=0.962807	avgTime=142.156us
