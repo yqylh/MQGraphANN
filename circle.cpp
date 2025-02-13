@@ -13,8 +13,9 @@ int main(int argc, char **argv ){
     m_sparse = atoi(argv[3]);
     search_center = atoi(argv[4]);
     CircleIndex index(baseFileName, ef, m_circle, m_sparse, search_center);
-    index.buildIndex();
+    // index.buildIndex();
     // index.loadIndex();
-    index.searchIndex();
+    // index.searchIndex();
+    // index.dataSet->convertToFvecs("./dataset/base.fvecs", "./dataset/query.fvecs");
     return 0;
 }

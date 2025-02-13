@@ -21,7 +21,7 @@ public:
     int search_center;
     int D; // 维度
     int N; // 数据集大小 
-    DataSet<float> *dataSet;
+    HDF5DataSet<float> *dataSet;
     // 聚类
     std::vector<int> cluster_id; // 每个数据点的簇id 范围[0, cluster_num)
     std::vector<std::vector<std::pair<int, float> > > cluster; // 每个簇的数据点id 和距离, 按照距离排序
