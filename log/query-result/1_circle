@@ -1,0 +1,57 @@
+Recall=98.868,avgTime=411.387
+Recall=98.8903,avgTime=416.188
+Recall=98.8913,avgTime=415.111
+Recall=98.8917,avgTime=417.031
+Recall=98.8867,avgTime=418.699
+Recall=98.8929,avgTime=406.516
+Recall=98.8921,avgTime=404.507
+Recall=98.8991,avgTime=411.079
+Recall=96.1036,avgTime=379.448
+Recall=96.1244,avgTime=368.907
+Recall=96.1244,avgTime=368.907
+Recall=96.1269,avgTime=369.057
+Recall=96.1274,avgTime=372.668
+Recall=96.121,avgTime=370.849
+Recall=96.1283,avgTime=370.306
+Recall=96.1265,avgTime=369.527
+Recall=96.1337,avgTime=373.419
+8_16_10 Recall=88.0319,avgTime=355.576
+16_16_10 Recall=88.0505,avgTime=353.824
+24_16_10 Recall=88.0526,avgTime=353.633
+32_16_10 Recall=88.0528,avgTime=355.436
+48_16_10 Recall=88.0467,avgTime=353.584
+64_16_10 Recall=88.0536,avgTime=354.145
+96_16_10 Recall=88.0524,avgTime=352.786
+128_16_10 Recall=88.0602,avgTime=355.578
+8_2_10 Recall=50.4246,avgTime=96.1101
+16_2_10 Recall=50.6061,avgTime=96.2474
+24_2_10 Recall=50.0868,avgTime=104.302
+32_2_10 Recall=50.0497,avgTime=99.1859
+48_2_10 Recall=48.1284,avgTime=106.842
+64_2_10 Recall=49.1033,avgTime=101.449
+96_2_10 Recall=50.2101,avgTime=111.257
+128_2_10 Recall=50.1341,avgTime=98.3112
+8_2_5 Recall=46.3553,avgTime=93.0686
+16_2_5 Recall=46.5357,avgTime=94.3664
+24_2_5 Recall=46.0163,avgTime=96.9775
+32_2_5 Recall=45.9793,avgTime=96.8886
+48_2_5 Recall=44.0579,avgTime=104.475
+64_2_5 Recall=45.0329,avgTime=98.1444
+96_2_5 Recall=46.1398,avgTime=102.582
+128_2_5 Recall=46.0637,avgTime=97.256
+8_2_25 Recall=64.5252,avgTime=110.191
+16_2_25 Recall=64.7107,avgTime=111.245
+24_2_25 Recall=64.1916,avgTime=113.518
+32_2_25 Recall=64.1542,avgTime=115.812
+48_2_25 Recall=62.2328,avgTime=122.464
+64_2_25 Recall=63.2078,avgTime=116.562
+96_2_25 Recall=64.3147,avgTime=119.931
+128_2_25 Recall=64.2388,avgTime=112.725
+8_2_50 Recall=71.6102,avgTime=121.659
+16_2_50 Recall=71.7975,avgTime=130.006
+24_2_50 Recall=71.278,avgTime=133.635
+32_2_50 Recall=71.2408,avgTime=133.159
+48_2_50 Recall=69.3196,avgTime=141.114
+64_2_50 Recall=70.2946,avgTime=140.22
+96_2_50 Recall=71.4015,avgTime=138.502
+128_2_50 Recall=71.3255,avgTime=131.552

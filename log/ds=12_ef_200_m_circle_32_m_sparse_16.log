@@ -2183,3 +2183,5 @@ Recall: 0.984002
 avgTime: 337.159us
 Recall: 0.948594
 avgTime: 252.193us
+Recall: 0.878404
+avgTime: 236.564us

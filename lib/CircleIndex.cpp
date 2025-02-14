@@ -533,6 +533,11 @@ public:
         float recall = correct / (dataSet->queryData.size() * K);
         logFile << "Recall: " << recall << std::endl;
         logFile << "avgTime: " << allTime / dataSet->queryData.size() << "us" << std::endl;
+        std::ofstream recallFile("./log/query-result/" + std::to_string(DatabaseSelect) + "_circle", std::ios::app);
+        recallFile << m_circle << "_" << m_sparse << "_" << search_center << " ";
+        recallFile << "Recall=" << recall * 100 << ",";
+        recallFile << "avgTime=" << allTime / dataSet->queryData.size() << std::endl;
+        recallFile.close();
     }
 };
 

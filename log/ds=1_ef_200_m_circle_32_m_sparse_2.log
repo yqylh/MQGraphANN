@@ -2005,3 +2005,11 @@ cluster 865 global_threshold: 100.831 circle size: 1812 sparse size: 1665
  建立中心点索引	 - Elapsed time: 	45.6835	mirco seconds.
  建立图索引	 - Elapsed time: 	55278.5	mirco seconds.
 总耗时: 90183 ms
+Recall: 0.500497
+avgTime: 99.1859us
+Recall: 0.459793
+avgTime: 96.8886us
+Recall: 0.641542
+avgTime: 115.812us
+Recall: 0.712408
+avgTime: 133.159us

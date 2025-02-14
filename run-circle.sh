@@ -11,10 +11,18 @@ for datasetS in "${dataset[@]}"; do
 
     for edgeS in "${edge[@]}"; do
     {
-        ./circle 200 $edgeS 16 25
+        ./circle 200 $edgeS 2 50
         echo "dataset: $datasetS, edge: $edgeS"
     }
     done
     rm circle
 }
 done
+# solved
+# 16 100
+# 16 25
+# 16 10
+# 2 10
+# 2 5
+# 2 25
+# 2 50

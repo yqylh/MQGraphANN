@@ -493,3 +493,11 @@ cluster 240 global_threshold: 1358.17 circle size: 225 sparse size: 183
  建立中心点索引	 - Elapsed time: 	14.5284	mirco seconds.
  建立图索引	 - Elapsed time: 	5053.48	mirco seconds.
 总耗时: 8924 ms
+Recall: 0.621106
+avgTime: 155.186us
+Recall: 0.59682
+avgTime: 152.121us
+Recall: 0.767354
+avgTime: 172.679us
+Recall: 0.834563
+avgTime: 194.495us

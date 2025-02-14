@@ -1081,3 +1081,11 @@ cluster 244 global_threshold: 1.21613 circle size: 882 sparse size: 1022
  建立中心点索引	 - Elapsed time: 	28.2511	mirco seconds.
  建立图索引	 - Elapsed time: 	24560.3	mirco seconds.
 总耗时: 37286 ms
+Recall: 0.20494
+avgTime: 121.42us
+Recall: 0.19565
+avgTime: 115.326us
+Recall: 0.290248
+avgTime: 131.666us
+Recall: 0.36745
+avgTime: 153.528us

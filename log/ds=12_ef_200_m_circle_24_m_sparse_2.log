@@ -2179,3 +2179,11 @@ cluster 883 global_threshold: 1.50552 circle size: 2220 sparse size: 1618
  建立中心点索引	 - Elapsed time: 	46.4219	mirco seconds.
  建立图索引	 - Elapsed time: 	43060.4	mirco seconds.
 总耗时: 55240 ms
+Recall: 0.375628
+avgTime: 69.157us
+Recall: 0.351566
+avgTime: 68.2319us
+Recall: 0.530302
+avgTime: 78.1228us
+Recall: 0.643122
+avgTime: 88.9122us

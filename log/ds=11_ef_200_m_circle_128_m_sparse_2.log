@@ -1081,3 +1081,11 @@ cluster 370 global_threshold: 0.824962 circle size: 301 sparse size: 1428
  建立中心点索引	 - Elapsed time: 	28.3014	mirco seconds.
  建立图索引	 - Elapsed time: 	24686.3	mirco seconds.
 总耗时: 37812 ms
+Recall: 0.205876
+avgTime: 125.207us
+Recall: 0.196575
+avgTime: 120.93us
+Recall: 0.29148
+avgTime: 135.927us
+Recall: 0.368915
+avgTime: 153.872us

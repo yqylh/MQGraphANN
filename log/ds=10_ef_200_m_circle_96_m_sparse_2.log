@@ -1085,3 +1085,11 @@ cluster 255 global_threshold: 0.00107157 circle size: 10944 sparse size: 7452
  建立中心点索引	 - Elapsed time: 	19.998	mirco seconds.
  建立图索引	 - Elapsed time: 	46655.2	mirco seconds.
 总耗时: 101087 ms
+Recall: 0.150808
+avgTime: 55.2783us
+Recall: 0.140372
+avgTime: 52.1121us
+Recall: 0.255818
+avgTime: 63.6283us
+Recall: 0.36682
+avgTime: 74.716us
