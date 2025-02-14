@@ -11,7 +11,8 @@ for datasetS in "${dataset[@]}"; do
 
     for edgeS in "${edge[@]}"; do
     {
-        ./circle 200 $edgeS 2 10
+        ./circle 200 $edgeS 16 25
+        echo "dataset: $datasetS, edge: $edgeS"
     }
     done
     rm circle

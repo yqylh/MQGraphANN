@@ -58,7 +58,7 @@ public:
         cluster.resize(cluster_num);
         center.resize(cluster_num);
         // 初始化日志
-        logFile.open("./log/ds=" + std::to_string(DatabaseSelect) + "_ef_" + std::to_string(ef) + "_m_circle_" + std::to_string(m_circle) + "_m_sparse_" + std::to_string(m_sparse) + ".log");
+        logFile.open("./log/ds=" + std::to_string(DatabaseSelect) + "_ef_" + std::to_string(ef) + "_m_circle_" + std::to_string(m_circle) + "_m_sparse_" + std::to_string(m_sparse) + ".log", std::ios::app);
         bothName = "./dataset/circle/" + std::to_string(DatabaseSelect) + "_ef_" + std::to_string(ef) + "_m_circle_" + std::to_string(m_circle) + "_m_sparse_" + std::to_string(m_sparse);
         // 初始化索引
         circleIndex.resize(cluster_num);
@@ -364,6 +364,7 @@ public:
     }
 
     void buildIndex() {
+        auto begin = std::chrono::steady_clock::now();
         // 1. kmeans
         Timer::measure("Kmeans 分簇", logFile, [&] {
             paralleKmeans();
@@ -376,6 +377,8 @@ public:
         Timer::measure("建立图索引", logFile, [&] {
             buildGraphIndex();
         });
+        auto end = std::chrono::steady_clock::now();
+        logFile << "总耗时: " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << " ms" << std::endl;
         saveIndex();
     }
 
